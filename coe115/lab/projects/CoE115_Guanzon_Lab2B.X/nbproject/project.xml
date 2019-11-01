@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>CoE115_Guanzon_Lab2B</name>
+            <creation-uuid>478a79ee-72d6-445b-bdea-c3291f46c946</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions/>
+            <cpp-extensions/>
+            <header-extensions/>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>../../../../../../../../Program Files (x86)/Microchip/xc16/v1.36/support/PIC24F/gld</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>default</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>Simulator</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>PICKit3</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>PICKit3_Power</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>

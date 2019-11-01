@@ -1,0 +1,38 @@
+window_width = 1000
+window_height = 600
+
+graph_width = 500
+graph_height = 500
+graph_padding = window_height - graph_height
+    
+cols = 6
+rows = 6
+grid = [[0 for x in range(cols)] for y in range(rows)]
+
+node_radius = 30
+
+def setup():
+
+    size(window_width, window_height)
+    background(185, 217, 235)
+
+    rect(50,50, 500, 500)
+
+    for i in range(cols):
+        for j in range(rows):
+            grid[j][i] = Node(i,j)
+            grid[j][i].show()
+
+def draw():
+    pass
+
+class Node: 
+
+    def __init__(self, i, j):
+        self.i = i
+        self.j = j
+    
+    def show(self):
+        x = self.i * graph_width / cols + (graph_padding / 2)
+        y = self.j * graph_height / rows + (graph_padding / 2)
+        ellipse(x, y, node_radius, node_radius)

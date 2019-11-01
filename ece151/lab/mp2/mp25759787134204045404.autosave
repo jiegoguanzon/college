@@ -1,0 +1,8 @@
+def setup():
+    size(900, 480)
+    background(255)
+    fill(141, 200, 232)
+
+
+def draw():
+    pass

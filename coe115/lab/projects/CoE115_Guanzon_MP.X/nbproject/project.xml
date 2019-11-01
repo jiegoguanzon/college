@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>com.microchip.mplab.nbide.embedded.makeproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/make-project/1">
+            <name>CoE115_Guanzon_MP</name>
+            <name>CoE115_Guanzon_Lab6</name>
+            <creation-uuid>4ecebdea-ce8e-4b0a-9c59-18d126da1024</creation-uuid>
+            <make-project-type>0</make-project-type>
+            <c-extensions>c</c-extensions>
+            <cpp-extensions/>
+            <header-extensions>h</header-extensions>
+            <asminc-extensions/>
+            <sourceEncoding>ISO-8859-1</sourceEncoding>
+            <make-dep-projects/>
+            <sourceRootList>
+                <sourceRootElem>../../../../../../../../Program Files (x86)/Microchip/xc16/v1.36/support/PIC24F/gld</sourceRootElem>
+                <sourceRootElem>../../../../../../../../Program Files (x86)/Microchip/xc16/v1.36/support/generic/h</sourceRootElem>
+                <sourceRootElem>.</sourceRootElem>
+            </sourceRootList>
+            <confList>
+                <confElem>
+                    <name>Jigs</name>
+                    <type>2</type>
+                </confElem>
+                <confElem>
+                    <name>Karlo</name>
+                    <type>2</type>
+                </confElem>
+            </confList>
+            <formatting>
+                <project-formatting-style>false</project-formatting-style>
+            </formatting>
+        </data>
+    </configuration>
+</project>

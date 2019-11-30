@@ -1,0 +1,65 @@
+\begin{thebibliography}{10}
+
+\bibitem{quadrobotlegs}
+Y.~Zhong, W.~Runxiao, H.~Feng, and C.~Yasheng.
+\newblock Analysis and research of quadruped robot's legs: A comprehensive
+  review.
+\newblock {\em International Journal of Advanced Robotic Systems}, 16, 05 2019.
+
+\bibitem{bigdog}
+M.~Raibert, K.~Blankespoor, G.~Nelson, R.~Playter, and T.B. Team.
+\newblock Bigdog, the rough-terrain quadruped robot.
+\newblock {\em IFAC Proceedings Volume}, 41:10822--10825, 07 2008.
+
+\bibitem{cheetah3}
+
+
+\bibitem{minicheetah}
+
+
+\bibitem{designprinciples}
+S.~{Seok}, A.~{Wang}, {Meng Yee Chuah}, D.~{Otten}, J.~{Lang}, and S.~{Kim}.
+\newblock Design principles for highly efficient quadrupeds and implementation
+  on the mit cheetah robot.
+\newblock In {\em 2013 IEEE International Conference on Robotics and
+  Automation}, pages 3307--3312, May 2013.
+
+\bibitem{quadrunningrobot}
+M.~Raibert, B.~Brown, M.~Chepponis, J.~Koechling, and J.~Hodgins.
+\newblock Dynamically stable legged locomotion.
+\newblock page 207, 09 1989.
+
+\bibitem{scoutii}
+I.~Poulakakis, J.A Smith, and M.~Buehler.
+\newblock Modeling and experiments of untethered quadrupedal running with a
+  bounding gait: The scout ii robot.
+\newblock {\em I. J. Robotics Res.}, 24:239--256, 2005.
+
+\bibitem{titanxiii}
+S.~Kitano, S.~Hirose, A.~Horigome, and G.~Endo.
+\newblock Titan-xiii: sprawling-type quadruped robot with ability of fast and
+  energy-efficient walking.
+\newblock {\em ROBOMECH Journal}, 3:1--16, 2016.
+
+\bibitem{hyq}
+C.~Semini, N.~Tsagarakis, E.~Guglielmino, M.~Focchi, F.~Cannella, and
+  D.~Caldwell.
+\newblock Design of hyq - a hydraulically and electrically actuated quadrupedal
+  robot.
+\newblock 2011.
+
+\bibitem{hyq2max}
+C.~{Semini}, V.~{Barasuol}, J.~{Goldsmith}, M.~{Frigerio}, M.~{Focchi},
+  Y.~{Gao}, and D.~G. {Caldwell}.
+\newblock Design of the hydraulically actuated, torque-controlled quadruped
+  robot hyq2max.
+\newblock {\em IEEE/ASME Transactions on Mechatronics}, 22(2):635--646, April
+  2017.
+
+\bibitem{minihyq}
+H.~{Khan}, S.~{Kitano}, M.~{Frigerio}, M.~{Camurri}, V.~{Barasuol},
+  R.~{Featherstone}, D.~G. {Caldwell}, and C.~{Semini}.
+\newblock Development of the lightweight hydraulic quadruped robot - minihyq.
+\newblock pages 1--6, May 2015.
+
+\end{thebibliography}

@@ -31,12 +31,12 @@ def compute_coordinates(joint_variables):
     print("x: {}\ty: {}\tz: {}".format(x, y, z))
 
 
-def inverse_kinematics(p_x, p_y, p_z):
+def inverse_kinematics(p_x, p_y, p_z, phi = -90):
 
-    phi = np.deg2rad(-90)
+    phi = np.deg2rad(phi)
 
     while (1):
-        q1 = np.arctan2(p_x, p_y)
+        q1 = -np.arctan2(p_x, p_y)
 
         pw_xy = np.sqrt(p_x ** 2 + p_y ** 2) - ((d5 + a4) * np.cos(phi))
         pw_z = p_z - d1 - ((d5 + a4) * np.sin(phi))

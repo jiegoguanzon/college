@@ -6,6 +6,17 @@ import cv2
 
 from scipy.spatial import ConvexHull, convex_hull_plot_2d
 
+pickup_height = 21
+pyramid_index = 0
+
+pyramid_hgap = 6
+pyramid_layer_height = 43
+container_raidus = 17.5
+        
+removed_circles = []
+present_circles = [0, 1, 2, 3, 4, 5]
+world_circles, image_circles, processed_snap = ip.img_process('calibrate.jpg', 'snap.jpg')
+
 def get_nearest_circle(circle_index):
 
     cost = 9999999999
@@ -69,6 +80,13 @@ def convex_hull():
         #print(hull.vertices[i])
         #print(centers[hull.vertices[i]][0], centers[hull.vertices[i]][1])
 
+        #_, phi = ik.inverse_kinematics(world_circles[hull.vertices[i]][0], world_circles[hull.vertices[i]][1], pickup_height)
+        #phi = np.rad2deg(phi)
+        
+        #if phi != -90.0:
+        #    print(phi)
+        #    cost = 0
+        #else:
         cost = get_cost(present_circles[hull.vertices[i]])
 
         if(cost > max_cost):
@@ -94,23 +112,16 @@ def write_commands(joint_variables, prev_joint_variables):
     command_q5 = np.round(float(np.rad2deg(delta_q5)), 1)
 
     f.write("MJ {},{},{},{},{}\n".format(command_q1, command_q2, command_q3, command_q4, command_q5))
-        
-removed_circles = []
-present_circles = [0, 1, 2, 3, 4, 5]
-world_circles, image_circles, processed_snap = ip.img_process('calibrate.jpg', 'snap.jpg')
 
 print("\nImage Circles:\n{}\n".format(image_circles))
 print("World Circles:\n{}".format(world_circles))
 
-pyramid_hgap = 5
-pyramid_layer_height = 42
-container_raidus = 17.5
-pyramid_coordinates = [[380, -(pyramid_hgap + container_raidus), pyramid_layer_height],
-                       [380, 0, pyramid_layer_height],
-                       [380, pyramid_hgap + container_raidus, pyramid_layer_height],
-                       [380, -(pyramid_hgap + container_raidus) / 2, pyramid_layer_height * 2],
-                       [380, (pyramid_hgap + container_raidus) / 2, pyramid_layer_height * 2],
-                       [380, 0, pyramid_layer_height * 3]]
+pyramid_coordinates = [[380, -(pyramid_hgap + (2 * container_raidus)), pickup_height],
+                       [380, 0, pickup_height],
+                       [380, pyramid_hgap + (2 * container_raidus), pickup_height],
+                       [380, -(pyramid_hgap + (2 * container_raidus)) / 2, pickup_height + pyramid_layer_height],
+                       [380, (pyramid_hgap + (2 * container_raidus)) / 2, pickup_height + pyramid_layer_height],
+                       [380, 0, pickup_height + pyramid_layer_height * 2]]
 
 for i, circle in enumerate(world_circles):
 
@@ -120,24 +131,49 @@ for i, circle in enumerate(world_circles):
 print("\nRemoved Circles: ", removed_circles)
 print("Present Circles:", present_circles)
 
-pickup_height = 42
-pyramid_index = 0
-
 f = open("rvm1_project3.txt", "w+")
 f.write("NT\nOG\nMJ 0,0,0,0,-8\nTI 10\n")
 
 prev_joint_variables = [0.0, 0.0, 0.0, 0.0, 0.0]
 
+#world_circles[1] = [420, 150, 17]
+
+height_multiplier = 3.5
+
+iteration = 0
+
+ordered_circles = []
+unreachable_circles = []
+
 for i in removed_circles:
 
-    # Place gripper above object
-    joint_variables, phi = ik.inverse_kinematics(world_circles[i][0], world_circles[i][1], 1.5 * pickup_height)
+    joint_variables, phi = ik.inverse_kinematics(world_circles[i][0], world_circles[i][1], pickup_height)
     phi = np.rad2deg(phi)
+
+    if phi == -90.0:
+        ordered_circles.append(i)
+    
+    if phi != -90.0:
+        unreachable_circles.append(i)
+
+ordered_circles.extend(unreachable_circles)
+
+for i in ordered_circles:
+
+    # Place gripper above object
+    joint_variables, phi = ik.inverse_kinematics(world_circles[i][0], world_circles[i][1], height_multiplier * pickup_height)
+    phi = np.rad2deg(phi)
+
+    if phi == -90.0:
+        nearest_circle_index = get_nearest_circle(i)
+        joint_variables[4] = ik.gripper_orientation([world_circles[i][0], world_circles[i][1]], [world_circles[nearest_circle_index][0], world_circles[nearest_circle_index][1]])
 
     print("\nPlace gripper above object.")
     print("Joint Variables: \n{}".format(np.rad2deg(joint_variables)))
     print("phi: {}".format(phi))
     ik.compute_coordinates(joint_variables)
+
+    processed_snap = ip.draw_arrowed_line(processed_snap, (image_circles[i][0], image_circles[i][1]), image_circles[i][2], joint_variables[4])
 
     write_commands(joint_variables, prev_joint_variables)
     prev_joint_variables = joint_variables.copy()
@@ -145,6 +181,7 @@ for i in removed_circles:
     # Pickup object
     joint_variables, phi = ik.inverse_kinematics(world_circles[i][0], world_circles[i][1], pickup_height)
     phi = np.rad2deg(phi)
+    pickup_phi = phi
 
     if phi == -90.0:
         nearest_circle_index = get_nearest_circle(i)
@@ -155,14 +192,12 @@ for i in removed_circles:
     print("phi: {}".format(phi))
     ik.compute_coordinates(joint_variables)
 
-    processed_snap = ip.draw_arrowed_line(processed_snap, (image_circles[i][0], image_circles[i][1]), image_circles[i][2], joint_variables[4])
-
     write_commands(joint_variables, prev_joint_variables)
     prev_joint_variables = joint_variables.copy()
-    f.write("GC\nTI 10\n")
+    f.write("GC\n")
 
     # Raise gripper
-    joint_variables, phi = ik.inverse_kinematics(world_circles[i][0], world_circles[i][1], 1.5 * pickup_height)
+    joint_variables, phi = ik.inverse_kinematics(world_circles[i][0], world_circles[i][1], height_multiplier * pickup_height, pickup_phi)
     phi = np.rad2deg(phi)
 
     print("\nRaise gripper with object.")
@@ -173,8 +208,46 @@ for i in removed_circles:
     write_commands(joint_variables, prev_joint_variables)
     prev_joint_variables = joint_variables.copy()
 
+    # Re-place object to properly grip
+    if pickup_phi != -90.0:
+
+        joint_variables, phi = ik.inverse_kinematics(280, 250, height_multiplier * pickup_height, pickup_phi)
+        phi = np.rad2deg(phi)
+
+        print("\nPlace gripper with object above stopover point.")
+        print("Joint Variables: \n{}".format(np.rad2deg(joint_variables)))
+        print("phi: {}".format(pickup_phi))
+        ik.compute_coordinates(joint_variables)
+
+        write_commands(joint_variables, prev_joint_variables)
+        prev_joint_variables = joint_variables.copy()
+
+        joint_variables, phi = ik.inverse_kinematics(280, 250, pickup_height, pickup_phi)
+        phi = np.rad2deg(phi)
+
+        print("\nPlace object on stopover point.")
+        print("Joint Variables: \n{}".format(np.rad2deg(joint_variables)))
+        print("phi: {}".format(pickup_phi))
+        ik.compute_coordinates(joint_variables)
+
+        write_commands(joint_variables, prev_joint_variables)
+        prev_joint_variables = joint_variables.copy()
+        f.write("GO\n")
+
+        joint_variables, phi = ik.inverse_kinematics(280, 250, pickup_height)
+        phi = np.rad2deg(phi)
+
+        print("\nFix grip on object.")
+        print("Joint Variables: \n{}".format(np.rad2deg(joint_variables)))
+        print("phi: {}".format(phi))
+        ik.compute_coordinates(joint_variables)
+
+        write_commands(joint_variables, prev_joint_variables)
+        prev_joint_variables = joint_variables.copy()
+        f.write("GC\n")
+
     # Place gripper above pyramid position
-    joint_variables, phi = ik.inverse_kinematics(pyramid_coordinates[pyramid_index][0], pyramid_coordinates[pyramid_index][1], 1.5 * pyramid_coordinates[pyramid_index][2])
+    joint_variables, phi = ik.inverse_kinematics(pyramid_coordinates[pyramid_index][0], pyramid_coordinates[pyramid_index][1], 20 + pyramid_coordinates[pyramid_index][2])
     phi = np.rad2deg(phi)
     joint_variables[4] = np.deg2rad(90)
 
@@ -198,10 +271,10 @@ for i in removed_circles:
 
     write_commands(joint_variables, prev_joint_variables)
     prev_joint_variables = joint_variables.copy()
-    f.write("TI 10\nGO\nTI 10\n")
+    f.write("GO\n")
 
     # Place gripper above pyramid position
-    joint_variables, phi = ik.inverse_kinematics(pyramid_coordinates[pyramid_index][0], pyramid_coordinates[pyramid_index][1], 1.5 * pyramid_coordinates[pyramid_index][2])
+    joint_variables, phi = ik.inverse_kinematics(pyramid_coordinates[pyramid_index][0], pyramid_coordinates[pyramid_index][1], 20 + pyramid_coordinates[pyramid_index][2])
     phi = np.rad2deg(phi)
     joint_variables[4] = np.deg2rad(90)
 
@@ -220,3 +293,6 @@ cv2.resizeWindow('Processed Image', 885, 420)
 cv2.imshow('Processed Image', processed_snap)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+print("Ordered circles: {}".format(ordered_circles))
+print("Unreachable circles: {}".format(unreachable_circles))

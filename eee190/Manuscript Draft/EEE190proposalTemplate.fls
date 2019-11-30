@@ -1,0 +1,190 @@
+PWD c:/Users/jiego/Downloads/190 Template
+INPUT c:/texlive/2019/texmf.cnf
+INPUT c:/texlive/2019/texmf-dist/web2c/texmf.cnf
+INPUT c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.tex
+OUTPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.log
+INPUT c:/Users/jiego/Downloads/190 Template/upeeei.cls
+INPUT c:/Users/jiego/Downloads/190 Template/upeeei.cls
+INPUT c:/Users/jiego/Downloads/190 Template/uct11_new.clo
+INPUT c:/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
+INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifpdf.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifxetex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/latin9.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/latin9.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/srcltx/srcltx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/srcltx/srcltx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/units/units.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/units/units.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/units/nicefrac.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/units/nicefrac.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT c:/texlive/2019/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/subfig/subfig.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/switch.def
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
+INPUT c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.aux
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.aux
+OUTPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.aux
+INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifluatex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/generic/iftex/ifluatex.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+OUTPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.pdf
+INPUT c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.toc
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.toc
+OUTPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.toc
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lof
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lof
+OUTPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lof
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lot
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lot
+OUTPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lot
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT c:/Users/jiego/Downloads/190 Template/images/prismatic_leg.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/prismatic_leg.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/prismatic_leg.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/quad_running_robot.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/quad_running_robot.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/quad_running_robot.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/scout_ii.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/scout_ii.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/scout_ii.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/articulated_leg.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/articulated_leg.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/articulated_leg.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/mammal_articulated.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/mammal_articulated.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/mammal_articulated.PNG
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT c:/Users/jiego/Downloads/190 Template/images/sprawling_articulated.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/sprawling_articulated.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/sprawling_articulated.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/hyq.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/hyq.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/hyq.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/minihyq.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/minihyq.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/minihyq.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/redundant_articulated_leg.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/redundant_articulated_leg.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/images/redundant_articulated_leg.PNG
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.bbl
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.bbl
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmib10.tfm
+INPUT c:/Users/jiego/Downloads/190 Template/images/placement.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/placement.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/placement.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/image_scale.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/image_scale.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/image_scale.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/subfloat.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/subfloat.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/subfloat.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/subfloat.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/subfloat.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/bibtex.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/bibtex.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/bibtex.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/papers.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/papers.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/papers.png
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
+INPUT c:/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
+INPUT c:/Users/jiego/Downloads/190 Template/images/bibliography.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/bibliography.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/bibliography.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/equations.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/equations.png
+INPUT c:/Users/jiego/Downloads/190 Template/images/equations.png
+INPUT c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.aux
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb

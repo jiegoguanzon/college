@@ -1,28 +1,53 @@
 \babel@toc {english}{}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Project Block Diagram\relax }}{2}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Controller Topologies\relax }}{3}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Joint Controller Topology}}}{3}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Main Controller Topology}}}{3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Prismatic Leg Topology\relax }}{4}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Four-legged Running Machine\relax }}{5}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Scout II Robot\relax }}{5}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Articulated Leg Topology\relax }}{6}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Articulated Leg Configurations\relax }}{7}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mammal Configuration}}}{7}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Sprawling Configuration}}}{7}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces HyQ Leg Topology\relax }}{8}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces MiniHyQ Leg Topology\relax }}{8}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Redundant Articulated Leg Topology\relax }}{9}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Bigdog Robot Topology\relax }}{6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Series-elastic Actuator Block Diagram\relax }}{6}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces ANYdrive Series-Elastic Actuator\relax }}{7}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Proprioceptive Actuator Topology\relax }}{7}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Articulated Leg Configurations\relax }}{8}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mini Cheetah Actuator}}}{8}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mini Cheetah Actuator Cross-Sectional View}}}{8}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces OpenTorque Exploded View\relax }}{9}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Prismatic Leg Topology\relax }}{10}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Four-legged Running Machine\relax }}{10}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Scout II Robot\relax }}{11}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Articulated Leg Topology\relax }}{11}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Articulated Leg Configurations\relax }}{12}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mammal Configuration}}}{12}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Sprawling Configuration}}}{12}%
+\contentsline {figure}{\numberline {2.12}{\ignorespaces HyQ Leg Topology\relax }}{13}%
+\contentsline {figure}{\numberline {2.13}{\ignorespaces MiniHyQ Leg Topology\relax }}{14}%
+\contentsline {figure}{\numberline {2.14}{\ignorespaces ANYmal Topology\relax }}{15}%
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Cheetah 3 Leg Topology\relax }}{15}%
+\contentsline {figure}{\numberline {2.16}{\ignorespaces Redundant Articulated Leg Topology\relax }}{16}%
+\contentsline {figure}{\numberline {2.17}{\ignorespaces Cheetah and Cheetah 2 Leg Topology\relax }}{17}%
+\contentsline {figure}{\numberline {2.18}{\ignorespaces MIT Cheetah 3 Control Block Diagram\relax }}{18}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Quadrupedal Robot 3D Model\relax }}{21}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Joint Actuator 3D Model\relax }}{22}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Joint Controller PCB Design\relax }}{24}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Top Layer}}}{24}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bottom Layer}}}{24}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Field-Oriented Control Block Diagram\relax }}{25}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces PLL Estimator Block Diagram\relax }}{26}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Actuator Prototype\relax }}{28}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Herlea X8311s Brushless DC Motor\relax }}{29}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Unpopulated Joint Controller PCB\relax }}{30}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Top Layer}}}{30}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bottom Layer}}}{30}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Populated Joint Controller PCB\relax }}{31}%
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Top Layer}}}{31}%
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Bottom Layer}}}{31}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Space Vector Modulation Low-Pass Output\relax }}{32}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces EEE 198 Gantt Chart\relax }}{33}%
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Forcing float placement\relax }}{21}%
-\contentsline {figure}{\numberline {B.2}{\ignorespaces \LyX {} Graphics options\relax }}{22}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Subfloat Sample\relax }}{23}%
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Subfloat A}}}{23}%
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Subfloat B}}}{23}%
-\contentsline {figure}{\numberline {B.4}{\ignorespaces Bib\TeX {} from IEEEXplore\relax }}{24}%
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Selecting citations \relax }}{24}%
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Bibliographies with no auto-capitalization \relax }}{25}%
-\contentsline {figure}{\numberline {B.7}{\ignorespaces Math toolbar for equation writing\relax }}{25}%
+\contentsline {figure}{\numberline {A.1}{\ignorespaces T-PLA Technical Datasheet\relax }}{39}%
+\contentsline {figure}{\numberline {A.2}{\ignorespaces T-ABS Technical Datasheet\relax }}{40}%

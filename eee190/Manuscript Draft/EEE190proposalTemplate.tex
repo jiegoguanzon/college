@@ -6,6 +6,9 @@
 \usepackage{float}
 \usepackage{units}
 \usepackage{graphicx}
+\usepackage{url}
+\usepackage{pgfgantt}
+\usepackage{amsmath}
 
 \makeatletter
 
@@ -33,8 +36,8 @@ Jiego Benjamin Osea Guanzon\\ 2015-07906\\ \emph{B.S. Electronics and Communicat
 \degreesemester{December} 
 
 % Put your advisers here:
-\chair{Nicollete Arriola} 
-\othermembers{Manuel Ramos}
+\chair{Nicolette Ann Arriola MSEE} 
+\othermembers{~}
 \numberofmembers{2} 
 
 \field{Electrical/Computer/Electronics and Communications Engineering} 
@@ -73,25 +76,48 @@ Legged robots have several advantages over other types of mobile robots. While w
 
 However, bipedal (two-legged) robots have periods of instability during locomotion where only one leg is in contact with the ground. Other configurations with three or more legs have the characteristic of being stable as long as their center of mass is within the support polygon defined by the position of their legs. While having more legs usually means higher stability, it has the drawback of requiring more actuators and having more complex gaits. Quadrupedal robots, or four-legged robots, offer a robust middle-ground platform that has better load capacity and higher stability than bipedal robots while using fewer actuators compared to higher leg-count robots \cite{quadrobotlegs}.
 
-Quadrupedal robots, such as Boston Dynamic's Bigdog \cite{bigdog} and MIT's Cheetah 3 \cite{cheetah3}, are generally inaccessible to most researchers due to their high cost and large size. MIT's state-of-the-art Mini Cheetah \cite{minicheetah} is a low-cost version of its predecesor, the Cheetah 3 robot. It has a small form-factor, approximately 60\% of the Cheetah 3 robot, and costs approximately \$3600. While the cost is significantly smaller than its predecessor, it is still too expensive for most experimental and research purposes.
+Quadrupedal robots, such as Boston Dynamic's Bigdog \cite{bigdog} and MIT's Cheetah 3 \cite{mitcheetah3}, are generally inaccessible to most researchers due to their high cost and large size. Recent developments for the Cheetah 3 robot include MIT's state-of-the-art Mini Cheetah \cite{minicheetah}. It has a smaller form-factor, approximately 60\% of the Cheetah 3, and costs approximately \$3600. While the cost is significantly smaller that its predecessor, it is still too expensive for most experimental and research purposes.
 
 \section{Project Objectives}
 
-The project aims to develop a prototype of a cost-efficient 12-DOF quadrupedal robot. Proprioceptive actuators, with off-the-shelf brushless DC (BLDC) motors, are used to drive the joints to allow locomotion in uneven terrain. Custom joint controllers are to be used with the proprioceptive actuators while a custom main controller is to be used to handle the entire robot.
+The project aims to develop a prototype of a cost-efficient 12-DOF quadrupedal robot. Proprioceptive actuators, with off-the-shelf brushless DC (BLDC) motors, are used to drive the joints to allow locomotion in uneven terrain. Custom joint controllers are to be used with the proprioceptive actuators, while a custom main controller is to be used to handle the entire robot.
 
 The project also aims to create a robust platform that is to be used with gait experimentation and other quadrupedal robot research.
 
 \section{Project Overview}
 
-The project can be divided into two major parts: design and control. The block diagram of the project is shown in Figure X below.
+The project can be divided into two major parts: design and control. The block diagram of the project is shown in Figure \ref{fig:project-block-diagram}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1.0\columnwidth]{images/project_block_diagram}
+\par\end{centering}
+\caption{Project Block Diagram\label{fig:project-block-diagram}}
+\end{figure}
 
 \subsection{Design}
 
 The design part of the project can be further divided into two parts: mechanical and electronics design. 
 
-Mechanical design of the quadrupedal robot involves the modelling and construction of the actuator, joints, legs, and body of the robot. Modelling is done and simulated using Fusion360. Fused Deposition Modelling (FDM) 3D-printing is used to fabricate each part with polylactic acid (PLA). The actuator is comprised of a BLDC motor coupled to a 6.125 reduction ratio 3D-printed planetary gearbox. The joints are driven either directly by the actuator or by a timing belt.
+Mechanical design of the quadrupedal robot involves the modelling and construction of the actuator, joints, legs, and body of the robot. Modelling is done and simulated using Fusion360. Fused Deposition Modelling (FDM) 3D-printing is used to fabricate each part with polylactic acid (PLA). The actuator is comprised of a BLDC motor coupled to a 3D-printed planetary gearbox with a 6.125 reduction ratio. The joints are driven either directly by the actuator or by a timing belt.
 
-Electronics design of the quadrupedal robot involves the design and fabrication of custom main and joint controllers (WHAT TOPOlOGY?). Both controllers utilize a dsPIC33 microcontroller while the joint controller has a smart gate driver integrated circuit (IC) which drives a three-phase power inverter. The method of power delivery to each actuator is also considered in this design phase.
+Electronics design of the quadrupedal robot involves the design and fabrication of custom main and joint controllers. Both controllers utilize a dsPIC33 microcontroller while the joint controller has a smart gate driver integrated circuit (IC) which drives a three-phase power inverter. The method of power delivery to each actuator is also considered in this design phase. The block diagram of both controllers are shown in Figure \ref{fig:controller-diagrams}
+
+\begin{figure}[H]
+\begin{centering}
+\subfloat[Joint Controller Topology]{\begin{centering}
+\includegraphics[width=0.45\columnwidth]{images/joint_controller}
+\par\end{centering}
+}
+\par\end{centering}
+\begin{centering}
+\subfloat[Main Controller Topology]{\begin{centering}
+\includegraphics[width=0.6\columnwidth]{images/main_controller}
+\par\end{centering}
+}
+\par\end{centering}
+\caption{Controller Topologies\label{fig:controller-diagrams}}
+\end{figure}
 
 \subsection{Control}
 
@@ -101,7 +127,7 @@ Joint control, which is local to each motor controller, is responsible for the l
 
 \section{Documentation Flow and Organization}
 
-Chapter 2 discusses different types of commonly used mechanical legs for quadrupeds along with the different types of actuators that drive them. Materials, along with their advantages and disadvantages, are also discussed in the chapter. Finally, a few control algorithms and structures are discussed.
+Chapter 2 starts with the discussion of different types of actuators and mechanical legs used for legged robots. Then, the mechanical properties of thermoplastic materials commonly used in 3D printing are compared with one another. Control theory of quadrupedal robots are touched upon at the end of the chapter.
 
 Chapter 3 states the project's main objectives and discusses the problems it aims to solve.
 
@@ -111,9 +137,80 @@ Chapter 3 states the project's main objectives and discusses the problems it aim
 
 \section{Actuators}
 
+Actuators are considered as the driving force behind each joint of a robot. These are essential to any robot since without these, motion and operation will not be possible. Their design and architecture determines the efficiency of the robot and the type of control to be used. Three main types of actuators used in legged robotics that are to be discussed in this section are: hydraulic, series-elastic, and proprioceptive actuators.
+
+Hydraulic actuators utilize different types of fluids to drive the robot's joints. They usually have high force density with high impact robustness, where the load from impacts are distributed evenly over a large surface area in the hydraulic channels. The use of hydraulic actuators typically do not add significant amounts of mass and inertia to the limbs, which is ideal for high-speed legged locomotion \cite{minicheetah}. However, hydraulic actuators have their drawbacks, such as having highly non-linear dynamic behaviors. This makes their closed-loop control extremely complicated. They are also ineffecient, compared to electric actuators, due to energy leakage concerning the hydraulic fluid \cite{controlhydraulic}.
+
+Boston Dynamics' Bigdog, one of the most popular and well-known quadrupedal robot, utilizes a two-stroke internal combustion engine to drive its hydraulic actuators \cite{bigdog}. The actuators are low-friction hydraulic cylinders with two-stage servovalves. An on-board heat-exchanger is required to cool the the hydraulic oil used and the combustion engine. These add weight to the robot with its overall weight totalling to 109 kg. The robot topology is shown in Figure \ref{fig:bigdog}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\columnwidth]{images/bigdog}
+\par\end{centering}
+\caption{Bigdog Robot Topology\label{fig:bigdog}}
+\end{figure}
+
+The second type of actuator to be discussed is the series-elastic actuator (SEA). This type of actuator typically uses a high-geared electric motor and adds an elastic spring in series between the output and the load. The block diagram of a SEA is shown in Figure \ref{fig:sea-block-diagram} \cite{sea}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\columnwidth]{images/sea_block_diagram}
+\par\end{centering}
+\caption{Series-elastic Actuator Block Diagram\label{fig:sea-block-diagram}}
+\end{figure}
+
+The addition of a series elastic spring essentially filters the high-frequency impact forces on the actuator, causing less peak force on the gears. This, however, also filters the high-frequency output of the actuator, creating a trade-off between impact tolerance and small motion bandwidth. Series-elasting actuators can also be used as a form of energy storage. This energy storage can be highly beneficial to legged locomotion because it increases its energy efficiency \cite{sea}. Force control problems with SEAs are turned into position control problems where the output force is directly proportional to the positional difference of the series elastic spring muliplied by its spring constant. Therefore, series-elastic actuators require more positional sensors in order to compute and control force output. This adds mechanical complexity and cost to the actuator \cite{minicheetah}.
+
+The ANYmal quadrupedal robot uses highly-integrated modular series-elastic actuators, which are called ANYdrive. It uses high-torque motors coupled to harmonic drive gears which are in series with a rotational spring. Joint position and spring deflection are measured using absolute positional sensors that have a positional and torque accuracy of 0.025\textdegree and 0.08 Nm, respectively \cite{anymal2}. The ANYdrive actuator is shown in Figure \ref{fig:anydrive} \cite{anymal2}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/anydrive}
+\par\end{centering}
+\caption{ANYdrive Series-Elastic Actuator\label{fig:anydrive}}
+\end{figure}
+
+The third and last type of actuator to be discussed is the proprioceptive actuator. This type of actuator uses high torque density electric motors coupled to a transmission stage with a low gear reduction ratio to achieve high torque bandwidth torque control and high backdrivability \cite{minicheetah, cheetah3actuator}. This actuator type increases mechanical simplicity and reduces part count as it eliminates the need for series-elastic springs and requires only one position sensor for the motor rotor. The topology of proprioceptive actuators is shown in Figure \ref{fig:proprioceptive-actuator} \cite{cheetah3actuator}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.3\columnwidth]{images/proprioceptive}
+\par\end{centering}
+\caption{Proprioceptive Actuator Topology\label{fig:proprioceptive-actuator}}
+\end{figure}
+
+MIT's Cheetah 3 and Mini Cheetah uses custom proprioceptive actuators to drive their robot's joints. The Cheetah 3 uses custom high torque density BLDC motors coupled to a single-stage planetary gear train with a 7.67 gear reduction ratio \cite{mitcheetah3}. The Mini Cheetah, on the other hand, uses a modified off-the-shelf brushless motor with the output plate coupled to a planetary gearbox with a 6 gear reduction ratio. These are attached to a custom-made slim-profile aluminum housing along with its motor controller and position sensor. The Mini Cheetah actuator is shown in Figures \ref{fig:mini-cheetah-actuator} \cite{minicheetah}.
+
+\begin{figure}[H]
+\begin{centering}
+\subfloat[Mini Cheetah Actuator]{\begin{centering}
+\includegraphics[width=0.6\columnwidth]{images/mini_cheetah_actuator}
+\par\end{centering}
+}
+\par\end{centering}
+\begin{centering}
+\subfloat[Mini Cheetah Actuator Cross-Sectional View]{\begin{centering}
+\includegraphics[width=0.5\columnwidth]{images/mini_cheetah_actuator_xsection}
+\par\end{centering}
+}
+\par\end{centering}
+\caption{Articulated Leg Configurations\label{fig:mini-cheetah-actuator}}
+\end{figure}
+
+Levine's OpenTorque is an open-source proprioceptive actuator with 3D-printed housing and transmission \cite{opentorque}. It uses an off-the-shelf brushless DC motor coupled to a single-stage planetary gearbox with a gear reduction ratio of 8. This provides a highly capable actuator with backdrivability while maintaining relatively low-cost and mechanical simplicity. An exploded view of OpenTorque is shown in Figure \ref{fig:opentorque}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.8\columnwidth]{images/opentorque}
+\par\end{centering}
+\caption{OpenTorque Exploded View\label{fig:opentorque}}
+\end{figure}
+
+Hydraulic actuators provide high force density and impact robustness without adding significant mass and inertia to its legs. However, they have complicated closed-loop control and are highly inefficient compared to electric motors. Series-elastic actuators uses series elastic springs connected to a high-torque electric motor to achieve high-frequency impact force filtering and energy storage for locomotion. However, they introduce mechanical complexity, require several positional sensors, and poor high-frequency control bandwidth. Proprioceptive actuators provide an ideal solution to legged locomotion with its high torque density electric motor coupled to a transmission with low gear reduction ratios. This allows them to achieve high output torques with high bandwidths and high backdrivability for impact mitigation. Therefore, this project will use a proprioceptive actuator topology patterned after the Mini Cheetah actuator and OpenTorque.
+
 \section{Mechanical Legs}
 
-The most essential part of a quadrupedal robot are its mechanical legs. Their design and topology determines the overall performance and behavior of the robot since it defines its effective maneuverability, walking speed, and load capacity \cite{designprinciples}. There are three types of mechanical legs that are commonly used by quadrupeds: prismatic, articulated, and redundant articulated legs. 
+The next most important part of a quadrupedal robot are its mechanical legs. Their design and topology determines the overall performance and behavior of the robot since these define its effective maneuverability, walking speed, and load capacity \cite{designprinciples}. There are three types of mechanical legs that are commonly used by quadrupeds: prismatic, articulated, and redundant articulated legs. 
 
 Prismatic legs are the simplest type of mechanical legs since they only have a single rotating joint and a prismatic joint as shown in Figure \ref{fig:prismatic-leg} \cite{quadrobotlegs}. 
 
@@ -151,7 +248,7 @@ The second type of mechanical legs is the articulated leg. This leg topology rep
 \caption{Articulated Leg Topology\label{fig:articulated-leg}}
 \end{figure}
 
-There are two types of configuration of articulated legs on a quadruped: mammal and sprawling configuration. Mammal configurations have their legs positioned vertically with respect to the robot while sprawling configuration have the first segment of the leg (thigh) positioned horizontal with respect to the robot and the second leg segment (shank) being vertical. The topologies of both configurations are shown in Figure \ref{fig:articulated-configurations} \cite{titanxiii}.
+There are two types of configuration of articulated legs on a quadruped: mammal and sprawling configuration. Mammal configurations have their legs positioned vertically with respect to the robot while sprawling configuration have the first segment of the leg (thigh) positioned horizontally with respect to the robot and the second leg segment (shank) is oriented vertically. The topologies of both configurations are shown in Figure \ref{fig:articulated-configurations} \cite{titanxiii}.
 
 \begin{figure}[H]
 \begin{centering}
@@ -169,9 +266,9 @@ There are two types of configuration of articulated legs on a quadruped: mammal 
 \caption{Articulated Leg Configurations\label{fig:articulated-configurations}}
 \end{figure}
 
-Mammal configurations are often more compact and have a smaller footprint, with the added benefit of requiring low joint torques with the legs bent. On the other hand, sprawling configurations are typically more stable due to its large stability polygon and the ability to lower its center of gravity without affecting its locomotion. This configuration, however, has several disadvantages compared to the mammal configuration. Sprawling configurations require the pitch axis to continuously generate torque to support its own weight, therefore reducing its efficiency. They also move significantly slower than mammal configurations.
+Mammal configurations are often more compact and have a smaller footprint, with the added benefit of requiring low joint torques with the legs bent. On the other hand, sprawling configurations are typically more stable due to its large stability polygon and its ability to lower its center of gravity without affecting its locomotion. This configuration, however, has several disadvantages compared to the mammal configuration. Sprawling configurations require the pitch axis to continuously generate torque to support its own weight, therefore reducing its efficiency. They also move significantly slower than mammal configurations.
 
-Semini et al. have developed three quadrupedal robots with articulated legs, namely: HyQ, HyQ2Max, and MiniHyQ. The HyQ quadrupedal robot uses electro-hydraulic actuated legs. This system combines the high torque output of hydraulic actuators with the space-efficiency and high-speed of electric actuators to provide high power-to-weight ratio, high actuation speed, and torque robustness. The thigh of the robot is composed of parallel ribs that are linked together keeping it lightweight and low inertia. The shank is a cylindrical structure that houses an additional passive prismatic ankle joint. The topology of the HyQ robot leg is shown in Figure \ref{fig:hyq-leg} \cite{quadrobotlegs, hyq}.
+Semini et al. have developed three quadrupedal robots with articulated legs, namely: HyQ, HyQ2Max, and MiniHyQ. The HyQ quadrupedal robot uses electro-hydraulic actuated legs. This system combines the high torque output of hydraulic actuators with the space-efficiency and high-speed of electric actuators to provide high power-to-weight ratio, high actuation speed, and torque robustness. The thigh of the robot is composed of parallel ribs that are linked together, keeping it lightweight and maintaining low inertia. The shank is a cylindrical structure that houses an additional passive prismatic ankle joint. The topology of the HyQ robot leg is shown in Figure \ref{fig:hyq-leg} \cite{quadrobotlegs, hyq}.
 
 \begin{figure}[H]
 \begin{centering}
@@ -189,6 +286,26 @@ The HyQ2Max quadrupedal robot builds upon the HyQ with higher joint torques and 
 \caption{MiniHyQ Leg Topology\label{fig:mini-hyq-leg}}
 \end{figure}
 
+The ANYmal quadrupedal robot is designed for operation in harsh environments. It stands at 0.5 m tall with leg lengths of 0.28 m and a weight of approximately 30 kg. It uses highly integrated modular SEAs, called ANYdrive, to drive each joint in a mammalian configuration. The leg links of the robot are built with offsets to allow the joints to fully rotate which enables the robot to have a wide range of motion and mobility. The ANYmal is able to use its limbs above its body, like hands, for tasks such as opening doors. The knee joint actuators, however, are mounted on the leg which increases the leg's inertia. The topology of the ANYmal is shown in Figure \ref{fig:anymal} \cite{anymal, anymal2}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.7\columnwidth]{images/anymal}
+\par\end{centering}
+\caption{ANYmal Topology\label{fig:anymal}}
+\end{figure}
+
+The MIT Cheetah 3 is a highly efficient quadrupedal robot designed for high-speed locomotion. It can stand up to 0.88 m tall with leg lengths of 0.34 m and a weight of approximately 45 kg. The robot uses proprioceptive actuators mounted on its hips and close to its body to minimize the weight and inertia of its legs. The hip abduction/adduction and flexion/extension joints are quasi-direct driven while the knee flexion/extension is timing belt driven due to the actuator being away from the joint. The topology of the Cheetah 3 is shown in Figure \ref{fig:cheetah-3-leg} \cite{mitcheetah3}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.7\columnwidth]{images/cheetah_3}
+\par\end{centering}
+\caption{Cheetah 3 Leg Topology\label{fig:cheetah-3-leg}}
+\end{figure}
+
+The third and last type of mechanical legs to be discussed is the redundant articulated leg. This leg topology simply takes an articulated leg and adds at least one more rotating joint. This mimics leg structurs of animals with toes or hoofs and provide better kinematic properties when traversing rugged terrain. The leg topology is shown in Figure \ref{fig:redundant-articulated-leg} \cite{quadrobotlegs}.
+
 \begin{figure}[H]
 \begin{centering}
 \includegraphics[width=0.3\columnwidth]{images/redundant_articulated_leg}
@@ -196,19 +313,88 @@ The HyQ2Max quadrupedal robot builds upon the HyQ with higher joint torques and 
 \caption{Redundant Articulated Leg Topology\label{fig:redundant-articulated-leg}}
 \end{figure}
 
+MIT's Cheetah and Cheetah 2 are quadrupedal robots with redundant articulated legs. Both quadrupedal robots employ proprioceptive actuators to drive the joints. The knee joint is driven by a parallel linkage mechanisim connected to the actuator while the ankle only has a passive linkage mechanism which mimics the motion of the Achilles tendon. The topology of the Cheetah and Cheetah 2 robots are shown in Figure \ref{fig:cheetah12-leg} \cite{quadrobotlegs, cheetah}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.6\columnwidth]{images/cheetah12}
+\par\end{centering}
+\caption{Cheetah and Cheetah 2 Leg Topology\label{fig:cheetah12-leg}}
+\end{figure}
+
+The use of prismatic legs, with its single rotating and prismatic joint, simplifies the control aspect and choice of hardware for the robot. It is also has the lowest weight and inertia of the three leg topologies discussed. However, the kinematics of the robot is greatly limited due to having fewer rotating joints. Redundant articulated legs, on the other hand, have the best kinematic performance, stability, workspace, and is the closest representation of natural toed or hoofed animals. However, it comes with the cost of adding actuators to control at least three rotational joints and adding complexity to the control aspect for the robot. Articulated legs strike a middle-ground with high maneuverability and stability while having fewer actuators than redundant articulated legs. With that being said, the articulated leg topology, patterned after the Cheetah 3, will be used throughout the project.
+
 \section{Materials}
+
+Fused Deposition Modeling (FDM) 3D-printing is a low-cost rapid prototyping method that enables easy manufacturing of complex geometry with high strength. It involves melting of thermoplastic material through an extrusion nozzle and depositing them layer-by-layer to eventually form a solid shape \cite{pla-composites}. The three most used materials, and the ones to be discussed, are polylactic acid (PLA), acrylonitrile butadiene styrene (ABS), and polyethylene terephthalate glycol-modified (PETG). 
+
+PLA is one of the most widely used material for 3D-printing because of its ease-of-use, high availability, and affordability. It is known for its low thermal conductivity, high toughness, and bio-degradability \cite{plaabships}. PLA, however, has a lower melting point meaning it does not perform well in heated conditions.
+
+ABS is also one of the most widely used material for 3D-printing. It is known for its low thermal conductivity, high tougness, and high impact resistance \cite{plaabships}. In contrast to PLA, ABS has a higher melting point and is heat resistant, making it suitable for operation in heated conditions. However, it is harder to use because of its higher temperature requirements and its tendency to warp while printing.
+
+PETG is gaining popularity in the 3D-printing department because it combines the ease-of-use of PLA with the impact- and heat-resistance of ABS. It shares the same strength characteristics of ABS along with its high melting point. Additionally, PETG does not warp while printing. However, PETG is more expensive than both PLA and ABS.
+
+Tensile, flexural, and impact strengths of PopBit T-PLA and T-ABS taken from their respective datasheets, which are attached in Appendix A \cite{tpla, tabs}, are listed in Table \ref{tab:material-strengths}.
+
+\begin{table}[H]
+\caption{Tensile and Flexural Strengths of T-PLA and T-ABS\label{tab:material-strengths}}
+
+\centering{}
+\begin{tabular}{|c|c|c|c|}
+\hline 
+Material & Tensile Strength (MPa) & Flexural Strength (MPa) & Impact Strength\tabularnewline
+\hline 
+\hline 
+PLA & 32.2 $\pm$ 1.3 & 57 $\pm$ 2.2 & 14.1 $\pm$ 1.1 \tabularnewline
+\hline 
+ABS & 34 $\pm$ 1.3 & 70.6 $\pm$ 3.1 & 10.8 $\pm$ 0.8 \tabularnewline
+\hline 
+\hline 
+\end{tabular}
+\end{table}
+
+As shown, PLA has a marginally lower tensile strength compared to ABS but falls behind in flexural strength. PLA, however, has higher impact strength than ABS. PLA is chosen to be used in this project due to its overall close strength to ABS and it is much easier to print. PETG is a strong alternative for when more strength and heat-resistance is needed.
+
 \section{Control}
+
+Essential to any legged robot is its manner of locomotion. Different configurations of the mechanical legs and type of actuator require different approaches to gait and stability control. 
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.8\columnwidth]{images/cheetah3_control}
+\par\end{centering}
+\caption{MIT Cheetah 3 Control Block Diagram\label{fig:cheetah3-control}}
+\end{figure}
+
+The Cheetah 3 employs the control system shown in block diagram form in Figure \ref{fig:cheetah3-control} \cite{mitcheetah3}. The Cheetah 3 takes in a desired translational velocity and turning rate from the operator and uses them to plan the trajectory for the center-of-mass (CoM) of the robot. The trajectory is then sent to the body and leg controllers to generate the necessary force commands for each leg depending on whether it is in a stance or swing state. The controller uses a linear relationship of the robot's CoM translational $\ddot{\mathbf{p}}_c$ and body angular acceleration $\dot{\mathbf{\omega}}_b$ with the forces $\mathbf{F} = {(\mathbf{F}_1^T, \mathbf{F}_2^T, \mathbf{F}_3^T, \mathbf{F}_4^T)}^T$ as shown in Equation \ref{eq:controller-model} \cite{balancecontroller}.
+
+\begin{equation}
+    \label{eq:controller-model}
+    \begin{bmatrix}
+        \mathbf{I}_3 & \cdots & \mathbf{I}_3 \\
+        [\mathbf{p}_1 - \mathbf{p}_c]\times & \cdots & [\mathbf{p}_4 - \mathbf{p}_c]\times \\
+    \end{bmatrix}
+    \mathbf{F}
+    =
+    \begin{bmatrix}
+        m(\ddot{\mathbf{p}}_c + \mathbf{g}) \\
+        \mathbf{I}_G \dot{\mathbf{\omega}}_b
+    \end{bmatrix}
+\end{equation}
+
+Where $m$ is the robot's mass, $\mathbf{I}_G$ is the robot's centroidal inertia, $g$ is the gravity vector, and $\mathbf{p}_i$ are the positions of the feet. The Cheetah 3 also implements a balance controller that uses Proportional-Derivative (PD) control on the CoM and body orientation. The cost function for this controller chooses a balance between driving the CoM to the desired state, minimizing forces used, and penalizing deviations between the current and previous time frames. The gaits of the Cheetah 3 are defined by event-based finite state machines that schedule the nominal contact and swing phases. This allows easy modifications to the gaits and their transitions. A virtual support polygon is defined by the robot to provide a desired CoM position across different gaits. The algorithm biases away from legs that are about to swing and towards legs nearing touchdown allowing for the maintaning of forward momentum during locomotion.
 
 \cleardoublepage{}
 
 \chapter{Problem Statement and Objectives \label{cha:ProbStatement}}
 
-The problem statement and objectives are placed on a separated chapter
-for project proposals after the review of related work. The previous
-chapter builds up the foundation of the project by highlighting the
-advantages and disadvantages of the relevant related work. The main
-problem that the project intends to solve is then presented in this
-chapter. The project objectives should also be discussed here.
+Legged robots have been the topic of countless research in past years. Due to their high maneuverability and flexibility, they are able to operate in rough environments in contrast to wheeled robots. Being able to carry large payloads through rough terrain makes them ideal for disaster response operations. Recent developments have even allowed these robots to react to their environment without the need for computer vision through proprioception.
+
+These robots, however, are far too expensive for academic experimental and research purposes. Even the smaller, albeit newer, robust implementations still cost a few thousands of US dollars at least. 
+
+In line with this, the project aims to develep a prototype of a cost-efficient 12-DOF quadrupedal robot. It would have the ability to react to its surroundings using proprioceptive actuators with custom joint controllers and off-the-shelf brushless DC motors.
+
+The project also aims to provide the Robotics Automation Laboratory with a robust platform that can be used for future development of legged robotics.
 
 \cleardoublepage{}
 
@@ -217,41 +403,147 @@ chapter. The project objectives should also be discussed here.
 \section{Design and Implementation}
 \subsection{Mechanical}
 
-The quadrupedal robot implements three Degrees of Freedom (DOF) per leg. Two DOF joints are used for the hips which control the abduction/adduction and flexion/extension motion. One DOF joints are used for the knee to control its flexion/extension motion. No joints are designed into the quadruped's ankles since the actuators are backdrivable and force-compliant.  Fusion360 is used to design and simulate the quadruped. The 3D model of the robot is shown in Figure X below.
+The quadrupedal robot implements three Degrees of Freedom (DOF) per leg. Two DOF joints are used for the hips which control the abduction/adduction and flexion/extension motion. One DOF joints are used for the knee to control its flexion/extension motion. No joints are designed into the quadruped's ankles since the actuators are backdrivable and force-compliant.  Fusion360 is used to design and simulate the quadruped. The 3D model of the robot is shown in Figure \ref{fig:open-cauchy}.
 
-Each joint will be driven by an actuator that consists of a BLDC motor coupled to a single state planetary gearbox. The planetary gearbox has a reduction ratio of 6.125 which makes the actuator quasi-direct drive. Each actuator including the planetary gearbox will be 3D printed using readily available polylactic acid (PLA). Bearings are added to provide smoother rotation rotation of gears and more even distribution of loads, while threaded inserts are used to have stronger points to screw on. The actuator has an overall diameter of 110 mm and length of 75 mm and weighs 700 grams in total. An exploded view of the joint actuator is shown in Figure X below.
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.7\columnwidth]{images/open_cauchy}
+\par\end{centering}
+\caption{Quadrupedal Robot 3D Model\label{fig:open-cauchy}}
+\end{figure}
+
+Each joint will be driven by an actuator that consists of a BLDC motor coupled to a single state planetary gearbox. The planetary gearbox has a reduction ratio of 6.125 which makes the actuator quasi-direct drive and allows for force compliancy and proprioception. Each actuator including the planetary gearbox will be 3D printed using readily available tough polylactic acid (T-PLA) from PopBit. Bearings are added to provide smoother rotation of gears and more even distribution of loads, while threaded inserts are used to have stronger points to screw on. The actuator has an overall diameter of 110 mm and length of 75 mm and weighs 700 grams in total. The 3D model of the joint actuator is shown in Figure \ref{fig:joint-actuator}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\columnwidth]{images/joint_actuator}
+\par\end{centering}
+\caption{Joint Actuator 3D Model\label{fig:joint-actuator}}
+\end{figure}
 
 The three joint actuators for each leg are designed to be mounted at the top of the legs and as close to the body as possible. This makes sure that the actual legs would be as light as possible to minimize the leg's inertia. The two hip joints are directly coupled to the actuator using a 3D printed joint connector. The knee joint, on the other hand, uses a timing belt coupled to the output of the knee actuator to control the knee, providing an additional 1.25 gear reduction ratio. This configuration allows the robot's hips to have 180 degrees of rotation about its own roll axis and 360 degrees about its pitch axis. The robot's knees have 270 degrees of rotation. 
 
-The quadruped's legs consists of two links: upper and lower link. The upper link consists of two halves, connected to each other using screws, to enable access to the timing belt during assembly and maintenance. The lower link is one solid part that has a gear at one of its end and revolves around the lower part of the upper link. Lastly, the foot is a round object made out of rubber to absorb small amount of forces and provide some compliance.
+The quadruped's legs consists of two links: upper and lower link. The upper link consists of two halves, connected to each other using screws, to enable access to the timing belt during assembly and maintenance. The lower link is one solid part that has a gear at one of its end and revolves around the lower part of the upper link. Lastly, the foot is a round object made out of rubber to absorb small amount of forces and provide some compliance. The lengths of each link is shown in Table \ref{tab:link-lengths}.
 
-The hip abduction/adduction actuators are mounted onto the 3D printed body. The body houses the main controller of the robot and the battery to power the robot. The overall size of the quadrupedal robot is UxV mm.
+\begin{table}[H]
+\caption{Leg Link Lengths\label{tab:link-lengths}}
+
+\centering{}
+\begin{tabular}{|c|c|}
+\hline 
+Link & Length (mm)\tabularnewline
+\hline 
+\hline 
+Upper & 250\tabularnewline
+\hline 
+Lower & 200\tabularnewline
+\hline 
+\hline 
+\end{tabular}
+\end{table}
+
+The hip abduction/adduction actuators are mounted onto the 3D printed body. The body houses the main controller of the robot and the battery to power the robot. The overall size of the quadrupedal robot is around 550 by 400 mm.
 
 \subsection{Electronics}
 
-The quadrupedal robot uses a custom designed joint controller and main controller board. The joint controller is responsible with controlling the brushless DC (BLDC) motor in the actuator while the main controller is responsible with trajectory generation and propagation of positional data for the joints. Both controller boards are designed around Microchip's dsPIC33CK family of digital signal controllers (DSCs). The specific model and features of the DSCs used are shown in Table X below.
+The quadrupedal robot uses a custom designed joint controller and main controller board. The joint controller is responsible with controlling the brushless DC (BLDC) motor in the actuator while the main controller is responsible with trajectory generation and propagation of positional data for the joints. Both controller boards are designed around Microchip's dsPIC33CK family of digital signal controllers (DSCs). The specific model and features of the DSCs used are shown in Table \ref{tab:dspic-specs}.
 
-The joint controller is made up of four main compontents: microcontroller, gate driver, output stage, and encoder. The microcontroller used is the dsPIC33CK128MP505. The gate driver used is Texas Instruments' DR8323 Three-Phase Smart Gate Driver. This gate driver is responsible for driving an external three-phase inverter stage that generates the sinusoidal voltages used to drive the motor. The three-phase inverter stage uses the N-channel NTMFS4935NT1G MOSFETs which are rated for 30V and 13A. Lastly, the controller uses an AS5047P magnetic rotary position sensor, that is mounted at the back of the printed circuit board (PCB), to sense the rotation of the BLDC rotor and track its position and speed with 14 bits of resolution. Shunt resistors are  added onto the board in order to measure the current in each phase of the motor. Other needed components such as resistors, capacitors, inductors, diodes, and terminals are also designed into the controller upon recommendation of each main components' datasheets. Schematic capture and PCB layout design for both the joint and main controller was done on KiCad. Top and bottom layers of the 2-layer joint controller PCB are shown in Figures X and Y respectively.
+\begin{table}[H]
+\caption{dsPIC33K Model and Features\label{tab:dspic-specs}}
 
-The main controller is mainly composed of the dsPIC33CK128MP508 microcontroller. This microcontroller comes in the 80 TQFP package. The board also features 12 terminals for the CAN bus connections of each actuator. UART breakout pins are also added for communication to a PC. Top and bottom layers of the 2-layer main controller PCB are shown in Figures X and Y respectively.
+\centering{}
+\begin{tabular}{|c|c|}
+\hline 
+dsPIC33CK128MP505 & dsPIC33CK128MP508\tabularnewline
+\hline 
+\hline 
+48 Pins & 80 Pins\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{8 PWM Pairs}\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{High-Speed ADC}\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{4-Wire SPI}\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{UART}\tabularnewline
+\hline 
+\multicolumn{2}{|c|}{CAN-FD}\tabularnewline
+\hline 
+\hline 
+\end{tabular}
+\end{table}
+
+The joint controller is made up of four main compontents: microcontroller, gate driver, output stage, and encoder. The microcontroller used is the dsPIC33CK128MP505. The gate driver used is Texas Instruments' DR8323 Three-Phase Smart Gate Driver. This gate driver is responsible for driving an external three-phase inverter stage that generates the sinusoidal voltages used to drive the motor. The three-phase inverter stage uses the N-channel NTMFS4935NT1G MOSFETs which are rated for 30V and 13A. Lastly, the controller uses an AS5047P magnetic rotary position sensor, that is mounted at the back of the printed circuit board (PCB), to sense the rotation of the BLDC rotor and track its position and speed with 14 bits of resolution. Shunt resistors are  added onto the board in order to measure the current in each phase of the motor. Other needed components such as resistors, capacitors, inductors, diodes, and terminals are also designed into the controller upon recommendation of each main components' datasheets. Schematic capture and PCB layout design for both the joint and main controller was done on KiCad. Top and bottom layers of the 2-layer joint controller PCB are shown in Figure \ref{fig:joint-controller}.
+
+\begin{figure}[H]
+\begin{centering}
+\subfloat[Top Layer]{\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/joint_controller_top}
+\par\end{centering}
+}
+\par\end{centering}
+\begin{centering}
+\subfloat[Bottom Layer]{\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/joint_controller_bottom}
+\par\end{centering}
+}
+\par\end{centering}
+\caption{Joint Controller PCB Design\label{fig:joint-controller}}
+\end{figure}
+
+The main controller is mainly composed of the dsPIC33CK128MP508 microcontroller. The board also features 12 terminals for the CAN bus connections of each actuator. UART breakout pins are also added for communication to a PC.
 
 \subsection{Control}
 
 Control in the quadrupedal robot can be divided into three parts: joint, stability, and gait control. Each part is independent but functions in conjuction with the others.
 
-Joint control of the quadruped is distributed across the joint controllers of each actuator. It is responsible for controlling the torque and commutation of the BLDC motor in the actuator. It accepts positional data from the main controller and uses the Field Oriented Control (FOC) algorithm to generate three-phase sinusoidal voltages that maximize the torque output of the BLDC motor. The block diagram for the FOC algorithm is shown in Figure X below.
+Joint control of the quadruped is distributed across the joint controllers of each actuator. It is responsible for controlling the torque and commutation of the BLDC motor in the actuator. It accepts positional data from the main controller and uses the Field Oriented Control (FOC) algorithm to generate three-phase sinusoidal voltages that maximize the torque output of the BLDC motor. The block diagram for the FOC algorithm is shown in Figure \ref{fig:foc-block-diagram} \cite{an1292}.
 
-The first step in FOC is measuring the current of two phases of the motor and computing for the third using Equation X. 
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1.0\columnwidth]{images/foc}
+\par\end{centering}
+\caption{Field-Oriented Control Block Diagram\label{fig:foc-block-diagram}}
+\end{figure}
 
-Clarke Transform is applied to the three-phase currents that is referenced to the stator and moves them onto a 2D orthogonal system, still referenced to the stator, called alpha-beta.
+The first step in FOC is measuring the current of two phases of the motor and computing for the third using Equation \ref{eq:phase-currents}. 
 
-Park Transform is applied to the two-phase, stator-referenced currents and rotates them onto the d-q coordinate system that is referenced to the rotor. The two-phase currents are now treated as DC signals and can be controlled using conventional Proportional-Integral (PI) controllers. 
+\begin{equation} \label{eq:phase-currents}
+    i_a + i_b + i_c = 0
+\end{equation}
 
-Error signals are generated for the position, speed, Iq, and Id currents and are fed through individual cascaded PI controllers. The rotor angle and rotor speed are computed using an observer shown in Figure X below. 
+Clarke Transform, shown in Equation \ref{eq:clark-transform}, is applied to the three-phase currents that is referenced to the stator and moves them onto a 2D orthogonal system, still referenced to the stator, called alpha-beta.
+
+\begin{equation} \label{eq:clark-transform}
+    \begin{split}
+        i_\alpha &= i_a \\
+        i_\beta &= \frac{i_a + 2 i_b}{\sqrt{3}}
+    \end{split}
+\end{equation}
+
+Park Transform, shown in Equation \ref{eq:park-transform}, is applied to the two-phase, stator-referenced currents and rotates them onto the d-q coordinate system that is referenced to the rotor. The two-phase currents are now treated as DC signals and can be controlled using conventional Proportional-Integral (PI) controllers. 
+
+\begin{equation} \label{eq:park-transform}
+    \begin{split}
+        i_d &= i_\alpha \cos \theta + i_\beta \sin \theta \\
+        i_q &= -i_\alpha \cos \theta + i_\beta \sin \theta 
+    \end{split}
+\end{equation}
+
+Error signals are generated for the position, speed, Iq, and Id currents and are fed through individual cascaded PI controllers. The rotor angle and rotor speed are computed using phase-locked loop (PLL) estimator shown in Figure \ref{fig:pll-estimator} \cite{an1292}. 
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1.0\columnwidth]{images/pll_estimator}
+\par\end{centering}
+\caption{PLL Estimator Block Diagram\label{fig:pll-estimator}}
+\end{figure}
 
 The Vq and Vd outputs from the respective Iq and Id PI controllers are then referenced back onto the stator using the Inverse Park Transform. 
 
 The final step in FOC is to generate pulse-width modulation signals, with frequency of 20 kHz, for the three-phase inverter using Space Vector Modulation (SVM). SVM represent the six possible states of the three-phase inverter as space vectors which are 60 degrees apart. It calculates which sector the resultant voltage vector is in and achieves this voltage by varying, thus averaging, the time spent on the two adjacent space vector states. The duty cycles are calculated and updated. The algorithm is done every Analog-to-Digital Converter (ADC) interrupt which is triggered by the PWM module.
+
+While the motor is being driven by the FOC algorithm, the rotor encoder continually tracks the position of the rotor. This feedback from the encoder is used for position control, on top of the torque and speed control, of the motor. The measured position is subtracted from the desired position, received from the main controller, and the error signal is fed to its separate PI controller. 
 
 \section{Testing}
 
@@ -262,31 +554,91 @@ The actuator's torque output with varying current is to be tested by attaching a
 Tuning of the PI controllers is to be done empirically. For the FOC, the inner PI controllers are to be tuned first before the outer controllers. Step response of the joint actuators to torque, current, speed, and position set points are to be tested and verified. Testing of each leg is to be done before assembly of the quadruped. Static gaits is to be fed to the quadruped robot to test its initial stability.
 
 \cleardoublepage{}
-
 \chapter{Preliminary Findings\label{cha:Prelims}}
 
-This is an optional chapter where you present all of your preliminary
-work, results, and analysis. For final project documentations, this
-chapter becomes the Results and Analysis chapter.
+\section{Design}
+
+\subsection{Mechanical}
+
+The prototype of the 3D-printed actuator is shown in Figure \ref{fig:actuator-prototype}. It has a single stage planetary gearbox with 6.125 gear reduction ratio. It has 82 teeth on its ring gear, 32 on each of its three planetary gears, and 16 teeth on the sun gear that's directly attached to the motor with M3 screws. The actuator housing is held together by M4 screws. It weighs around 800 grams with the bearings.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\columnwidth]{images/actuator_prototype}
+\par\end{centering}
+\caption{Actuator Prototype\label{fig:actuator-prototype}}
+\end{figure}
+
+The actuator uses a Herlea X8311s brushless DC motor procured from Alibaba. It has a diameter of 89.6 mm, length of 33.3 mm, weight of 388 g, and a KV rating of 140. The motor is shown in Figure \ref{fig:motor}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.5\columnwidth]{images/motor}
+\par\end{centering}
+\caption{Herlea X8311s Brushless DC Motor\label{fig:motor}}
+\end{figure}
+
+\subsection{Electronics}
+
+The joint controller PCB fabrication is out-sourced to JLCPCB. It's overall size is 52.5 mm by 52.5 mm. The components for the joint controller is procured from Digi-Key. The PCB was put through a reflow oven to solder the components easily. The unpopulated and populated joint controller PCB are shown in Figures \ref{fig:joint-controller-pcb} and \ref{fig:joint-controller-pcb-full} respectively.
+
+\begin{figure}[H]
+\begin{centering}
+\subfloat[Top Layer]{\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/joint_controller_pcb_top}
+\par\end{centering}
+}
+\par\end{centering}
+\begin{centering}
+\subfloat[Bottom Layer]{\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/joint_controller_pcb_bottom}
+\par\end{centering}
+}
+\par\end{centering}
+\caption{Unpopulated Joint Controller PCB\label{fig:joint-controller-pcb}}
+\end{figure}
+
+\begin{figure}[H]
+\begin{centering}
+\subfloat[Top Layer]{\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/joint_controller_pcb_top_full}
+\par\end{centering}
+}
+\par\end{centering}
+\begin{centering}
+\subfloat[Bottom Layer]{\begin{centering}
+\includegraphics[width=0.4\columnwidth]{images/joint_controller_pcb_bottom_full}
+\par\end{centering}
+}
+\par\end{centering}
+\caption{Populated Joint Controller PCB\label{fig:joint-controller-pcb-full}}
+\end{figure}
+
+\section{Control}
+
+Field-Oriented Control is implemented on a dsPIC33CK256MP508 Curiosity Development Board aside from the PLL Estimator Block. The low-pass filtered output of the SVM block is shown in Figure \ref{fig:svm-output}.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.7\columnwidth]{images/svm}
+\par\end{centering}
+\caption{Space Vector Modulation Low-Pass Output\label{fig:svm-output}}
+\end{figure}
 
 \cleardoublepage{}
 
 \chapter{Project Schedule and Deliverables\label{cha:Project-Sked}}
 
-For final project documentations, this chapter becomes the Conclusions
-and Recommendations chapter.
-
-For project proposals, end the documentation by presenting the project
-schedule and expected deliverables. This section should clearly describe
-the activities that will be done. Important milestones should be indicated
-in the schedule of activities. It should be as specific as possible. 
+The project is to be done during the 2nd Semester of Academic Year 2019-2020 for 17 weeks starting on January 10, 2020. The halfway point of the project will be evaluated 8 weeks after starting. The overall timeline for the project is shown as a gantt chart in Figure \ref{fig:gantt-chart}. Each period interval is one week long.
 
 \section{Gantt Chart }
 
-This is a time table that clearly indicates the important milestones
-of the project. The schedule should be divided into weekly segments.
-The authors should make sure that the schedules are realistic. It
-is advised that the weekly tasks are as detailed as possible. 
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=1.0\columnwidth]{images/gantt_chart}
+\par\end{centering}
+\caption{EEE 198 Gantt Chart\label{fig:gantt-chart}}
+\end{figure}
 
 \section{Halfway-point Deliverables}
 
@@ -310,231 +662,20 @@ shall be clearly and specifically stated.
 
 \appendix
 
-\chapter{Appendices}
-
-If there is only one appendix, it shall be labeled \textquotedblleft Appendix:\textquotedblright{}
-and the appendix title. If there are more than one appendices, they
-shall be labeled \textquotedblleft Appendix A: {[}title{]}\textquotedblright ,
-\textquotedblleft Appendix B: {[}title{]}\textquotedblright , etc.
-For software projects, appendices may include program listings, screen
-shots, and sample input and output files. For hardware projects, appendices
-may include printed circuit board layouts and geometric design layouts.
-Other possible appendices include user manuals (created by the author
-for the project), long mathematical proofs, and reviews of basic concepts.
-
-You can insert appendices through the \textbf{Document \textgreater{}
-Start Appendix Here} option. The appendix should start after the bibiliography
-section of the main document. Appendices can also have chapters and
-sections. \LyX{} automatically lists the appendices alphabetically.
-
-\cleardoublepage{}
-
-\chapter{Formatting Tips}
-
-\section{Inserting Chapters}
-
-On the upper left dropdown menu of the \LyX{} window, select \textit{Chapter}.
-You can then type the chapter title that you want. Pressing Enter
-will revert the format to \textit{Standard}, where the content can
-now be placed. Chapters are numbered and placed on the \textit{Table
-of Contents} automatically.
-
-\section{Inserting Sections}
-
-On the same dropdown menu where you insert a chapter, select \textit{Sections}.
-The sections under the chapter are automatically numbered accordingly.
-These also appear in the generated \textit{Table of Contents}.
-
-\subsection{Subsections}
-
-You can also add subsections and subsubsections. However, use them
-sparingly, especially the latter.
-
-\section{Inserting Labels}
-
-On the chapter/section/image/table that you want to reference, click
-\textbf{Insert \textgreater{} Label}. You can use the default label
-that \LyX{} generates for you. To 'call' it anywhere in your document,
-click the \textbf{Insert \textgreater{} Cross-reference}. This provides
-an efficient way of pointing out figure/table and chapter/section
-numbers, without the need to type out explicitly what the numbers
-are in the document.
-
-\section{Inserting Floats}
-
-Figures and tables shall be included in the body of the documentation
-to illustrate or clarify the accompanying text. Thus, figures and
-tables must be referenced in the text in order for them to be meaningful.
-By convention, figure names should be placed below the image, while
-table names should be placed on top of the table. 
-
-Moreover, figures or tables should not appear in the document before
-they are mentioned in the text. By default, \LyX{} does not follow
-this rule and places images or tables near, but not exactly after,
-the text referencing it. You can force the rule by right-clicking
-on the \textit{float:Figure} label in the \LyX{} editor and going to
-\textit{Settings}. In the window that appears, shown in Figure \ref{fig:Forcing-float-placement},
-uncheck \textit{Use default placement} and check \textit{Here definitely}
-instead.
+\chapter{PopBit Technical Datasheets}
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[width=0.5\columnwidth]{images/placement}
+\includegraphics[width=0.8\columnwidth]{images/tpla}
 \par\end{centering}
-\caption{Forcing float placement\label{fig:Forcing-float-placement}}
-
+\caption{T-PLA Technical Datasheet\label{fig:tpla}}
 \end{figure}
 
-
-\subsection{Inserting Images}
-
-Place your cursor on the area where you want to insert the image.
-Select \textbf{Insert \textgreater{} Float \textgreater{} Figure}.
-Insert the actual image by selecting \textbf{Insert \textgreater{}
-Graphics}. It is a recommended practice that all images should be
-placed on a single folder on the same directory of this \LyX{} document
-template.
-
-You can also center the image by putting first your cursor on the
-side of the image that you want to center. Right click then select
-\textit{Paragraph Settings}. Finally, select the \textit{Center} button. 
-
-You can scale the images inside the document by clicking on the image.
-As shown in Figure \ref{fig:LyX-Graphics-options}, images can be
-scaled relative to the column width. For two column document formats,
-scale the image relative to the text width.
-
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[width=0.6\columnwidth]{images/image_scale}
+\includegraphics[width=0.8\columnwidth]{images/tabs}
 \par\end{centering}
-\caption{\protect\LyX{} Graphics options\label{fig:LyX-Graphics-options}}
-
-\end{figure}
-
-As shown in Figure \ref{fig:Subfloat-Sample}, we can also insert
-floats within the float. To put the subfloat to the document center,
-click on the side of the \textit{subfloat: Figure} field, instead
-of the image within the subfloat, and then access the \textit{Paragraph
-Settings} as described in the previous steps. 
-
-\begin{figure}[H]
-\begin{centering}
-\subfloat[Subfloat A]{\begin{centering}
-\includegraphics[width=0.8\columnwidth]{images/subfloat}
-\par\end{centering}
-}
-\par\end{centering}
-\begin{centering}
-\subfloat[Subfloat B]{\begin{centering}
-\includegraphics[width=0.8\columnwidth]{images/subfloat}
-\par\end{centering}
-}
-\par\end{centering}
-\caption{Subfloat Sample\label{fig:Subfloat-Sample}}
-\end{figure}
-
-
-\subsection{Inserting Tables}
-
-Tables can be inserted just like Figure floats. Tables can also be
-centered just like the images in the same way. Note that some tables
-might be too long to fit the page. Again, by convention, table descriptions
-are placed on top of tables as demonstrated in Table \ref{tab:Sample-Table}.
-Make it fit by setting the column width (\textbf{Right click the whole
-column -\textgreater{} More -\textgreater{} Settings}). 
-
-\begin{table}[H]
-\caption{Sample Table \label{tab:Sample-Table}}
-
-\centering{}%
-\begin{tabular}{|c|c|c|c|c|}
-\hline 
-Row 1, Column 1 & Row 1, Column 2 & Row 1, Column 3 & Row 1, Column 4 & Row 1, Column 5\tabularnewline
-\hline 
-\hline 
- &  &  &  & \tabularnewline
-\hline 
- &  &  &  & \tabularnewline
-\hline 
- &  &  &  & \tabularnewline
-\hline 
- &  &  &  & \tabularnewline
-\hline 
-\end{tabular}
-\end{table}
-
-
-\section{Inserting Citations}
-
-To download the Bib\TeX{} formatted citation from IEEEXplore, see Figure
-\ref{fig:BibTeX-from-IEEEXplore}.
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=0.55\columnwidth]{images/bibtex}
-\par\end{centering}
-\caption{Bib\protect\TeX{} from IEEEXplore\label{fig:BibTeX-from-IEEEXplore}}
-\end{figure}
-
-Put whatever text returned by IEEEXplore to your Bib\TeX{} file (.bib).
-The references should follow the Bib\TeX{} format. To cite your paper
-, click \textbf{Insert \textgreater{} Citation}, select
-the desired paper, then click \textit{Add}, see Figure \ref{fig:Selecting-citations}. 
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=0.7\columnwidth]{images/papers}
-\par\end{centering}
-\caption{Selecting citations \label{fig:Selecting-citations}}
-
-\end{figure}
-
-As shown in Figure \ref{fig:Bibliographies-with-no}, work titles
-on bibliographies generated by Bib\TeX{} are not automatically capitalized.
-Capitalization can be forced by editing the Bib\TeX{} file (.bib) and
-then enclosing the capital letters of the titles with \{\}, such as
-``\textbf{title=\{An \{A\}ggressive \{P\}ower \{O\}ptimization of
-the \{ARM9\}-based core using \{RAZOR\}\},}''.
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=1\columnwidth]{images/bibliography}
-\par\end{centering}
-\caption{Bibliographies with no auto-capitalization \label{fig:Bibliographies-with-no}}
-
-\end{figure}
-
-
-\section{Inserting Equations}
-
-You can insert inline equations like this: $V=IR$\textbf{ }by going
-to \textbf{Insert -\textgreater{} Math -\textgreater{} Inline Equation}.
-You can also insert numbered equations through \textbf{Insert \textgreater{}
-Math \textgreater{} Numbered Formula}. 
-\begin{equation}
-\nicefrac{x}{y}=\frac{x}{y}
-\end{equation}
-
-\begin{equation}
-P(Z>1)=P(Z<0)=\frac{1}{2}\left[1+erf\left(\frac{Z-0.5}{\sqrt{2(0.18)}}\right)\right]=0.1193\label{eq:1}
-\end{equation}
-
-\begin{equation}
-T_{P}=\frac{\left[10\unitfrac{bits}{preamble}+(4\unitfrac{bytes}{packet})(8\unitfrac{bits}{byte})\right](16\unitfrac{symbols}{bit})}{450\unitfrac{ksymbols}{second}}=1.493ms\label{eq:4-1}
-\end{equation}
-
-A math toolbar, as shown in Figure \ref{fig:Math-toolbar-for}, will
-appear whenever you try to edit an equation field. This greatly helps
-in creating professional-looking equations. It is required that all
-equations appearing in the document be written out using this option.
-
-\begin{figure}[H]
-\begin{centering}
-\includegraphics[width=0.9\columnwidth]{images/equations}
-\par\end{centering}
-\caption{Math toolbar for equation writing\label{fig:Math-toolbar-for}}
-
+\caption{T-ABS Technical Datasheet\label{fig:tabs}}
 \end{figure}
 
 \cleardoublepage

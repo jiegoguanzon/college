@@ -11,11 +11,48 @@ M.~Raibert, K.~Blankespoor, G.~Nelson, R.~Playter, and T.B. Team.
 \newblock Bigdog, the rough-terrain quadruped robot.
 \newblock {\em IFAC Proceedings Volume}, 41:10822--10825, 07 2008.
 
-\bibitem{cheetah3}
-
+\bibitem{mitcheetah3}
+G.~{Bledt}, M.~J. {Powell}, B.~{Katz}, J.~{Di Carlo}, P.~M. {Wensing}, and
+  S.~{Kim}.
+\newblock Mit cheetah 3: Design and control of a robust, dynamic quadruped
+  robot.
+\newblock In {\em 2018 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 2245--2252, Oct 2018.
 
 \bibitem{minicheetah}
+Benjamin Katz.
+\newblock A low cost modular actuator for dynamic robots.
+\newblock 2018.
 
+\bibitem{controlhydraulic}
+J.~{Mattila}, J.~{Koivumaki}, D.~{Caldwell}, and C.~{Semini}.
+\newblock A survey on control of hydraulic robotic manipulators with projection
+  to future trends.
+\newblock {\em IEEE/ASME Transactions on Mechatronics}, 22(2):669--680, April
+  2017.
+
+\bibitem{sea}
+G.~A. {Pratt} and M.~M. {Williamson}.
+\newblock Series elastic actuators.
+\newblock 1:399--406 vol.1, Aug 1995.
+
+\bibitem{anymal2}
+M.~Hutter, C.~Gehring, A.~Lauber, F.~Guenther, D.~Bellicoso, V.~Tsounis,
+  P.~Fankhauser, R.~Diethelm, S.~Bachmann, M.~Bloesch, H.~Kolvenbach,
+  M.~Bjelonic, L.~Isler, and K.~Meyer.
+\newblock Anymal - toward legged robots for harsh environments.
+\newblock {\em Advanced Robotics}, 31:918--931, 2017.
+
+\bibitem{cheetah3actuator}
+P.~M. {Wensing}, A.~{Wang}, S.~{Seok}, D.~{Otten}, J.~{Lang}, and S.~{Kim}.
+\newblock Proprioceptive actuator design in the mit cheetah: Impact mitigation
+  and high-bandwidth physical interaction for dynamic legged robots.
+\newblock {\em IEEE Transactions on Robotics}, 33(3):509--522, June 2017.
+
+\bibitem{opentorque}
+G.~Levine.
+\newblock Opentorque-actuator.
+\newblock \url{https://github.com/G-Levine/OpenTorque-Actuator}, 2019.
 
 \bibitem{designprinciples}
 S.~{Seok}, A.~{Wang}, {Meng Yee Chuah}, D.~{Otten}, J.~{Lang}, and S.~{Kim}.
@@ -61,5 +98,63 @@ H.~{Khan}, S.~{Kitano}, M.~{Frigerio}, M.~{Camurri}, V.~{Barasuol},
   R.~{Featherstone}, D.~G. {Caldwell}, and C.~{Semini}.
 \newblock Development of the lightweight hydraulic quadruped robot - minihyq.
 \newblock pages 1--6, May 2015.
+
+\bibitem{anymal}
+M.~{Hutter}, C.~{Gehring}, D.~{Jud}, A.~{Lauber}, C.~D. {Bellicoso},
+  V.~{Tsounis}, J.~{Hwangbo}, K.~{Bodie}, P.~{Fankhauser}, M.~{Bloesch},
+  R.~{Diethelm}, S.~{Bachmann}, A.~{Melzer}, and M.~{Hoepflinger}.
+\newblock Anymal - a highly mobile and dynamic quadrupedal robot.
+\newblock In {\em 2016 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems (IROS)}, pages 38--44, Oct 2016.
+
+\bibitem{cheetah}
+P.~M. {Wensing}, A.~{Wang}, S.~{Seok}, D.~{Otten}, J.~{Lang}, and S.~{Kim}.
+\newblock Proprioceptive actuator design in the mit cheetah: Impact mitigation
+  and high-bandwidth physical interaction for dynamic legged robots.
+\newblock {\em IEEE Transactions on Robotics}, 33(3):509--522, June 2017.
+
+\bibitem{pla-composites}
+Z.~Liu, Q.~Lei, and S.~Xing.
+\newblock Mechanical characteristics of wood, ceramic, metal, and carbon
+  fiber-based pla composites fabricated by fdm.
+\newblock {\em Journal of Materials Research and Technology}, 8:3741--3751,
+  2019.
+
+\bibitem{plaabships}
+R.~Kumar, R.~Singh, and ICRA. Farina.
+\newblock On the 3d printing of recycled abs, pla and hips thermoplastics for
+  structural applications.
+\newblock {\em PSU Research Review}, 2, 10 2018.
+
+\bibitem{tpla}
+Guangzhou Popbit 3D Technology Co.
+\newblock {\em T-PLA Technical Data Sheet}.
+
+\bibitem{tabs}
+Guangzhou Popbit 3D Technology Co.
+\newblock {\em T-ABS Technical Data Sheet}.
+
+\bibitem{balancecontroller}
+M.~Focchi, A.~Prete, I.~Havoutis, R.~Featherstone, D.~Caldwell, and C.~Semini.
+\newblock High-slope terrain locomotion for torque-controlled quadruped robots.
+\newblock {\em Autonomous Robots}, 41, 03 2015.
+
+\bibitem{an1292}
+M.~Cheles.
+\newblock Sensorless field oriented control (foc) for a permanent magnet
+  synchronous motor (pmsm) using a pll estimator and field weakening (fw).
+\newblock
+  \url{https://www.microchip.com/wwwAppNotes/AppNotes.aspx?appnote=en544825}, 6
+  2011.
+
+\bibitem{lowchighp}
+Benjamin Katz.
+\newblock Low cost, high performance actuatorss for dynamic robots.
+\newblock 2016.
+
+\bibitem{petg}
+D.~Devsingh.
+\newblock Characterization of additive manufactured petg and carbon fiber-petg.
+\newblock 4, 05 2018.
 
 \end{thebibliography}

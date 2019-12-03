@@ -1,39 +1,33 @@
 \babel@toc {english}{}
 \contentsline {chapter}{List of Figures}{iii}%
-\contentsline {chapter}{List of Tables}{iv}%
+\contentsline {chapter}{List of Tables}{v}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}%
 \contentsline {section}{\numberline {1.1}Background of the Project}{1}%
 \contentsline {section}{\numberline {1.2}Project Objectives}{2}%
 \contentsline {section}{\numberline {1.3}Project Overview}{2}%
 \contentsline {subsection}{\numberline {1.3.1}Design}{2}%
-\contentsline {subsection}{\numberline {1.3.2}Control}{2}%
-\contentsline {section}{\numberline {1.4}Documentation Flow and Organization}{3}%
-\contentsline {chapter}{\numberline {2}Related Work}{4}%
-\contentsline {section}{\numberline {2.1}Actuators}{4}%
-\contentsline {section}{\numberline {2.2}Mechanical Legs}{4}%
-\contentsline {section}{\numberline {2.3}Materials}{9}%
-\contentsline {section}{\numberline {2.4}Control}{9}%
-\contentsline {chapter}{\numberline {3}Problem Statement and Objectives }{10}%
-\contentsline {chapter}{\numberline {4}Methodology}{11}%
-\contentsline {section}{\numberline {4.1}Design and Implementation}{11}%
-\contentsline {subsection}{\numberline {4.1.1}Mechanical}{11}%
-\contentsline {subsection}{\numberline {4.1.2}Electronics}{12}%
-\contentsline {subsection}{\numberline {4.1.3}Control}{13}%
-\contentsline {section}{\numberline {4.2}Testing}{14}%
-\contentsline {chapter}{\numberline {5}Preliminary Findings}{15}%
-\contentsline {chapter}{\numberline {6}Project Schedule and Deliverables}{16}%
-\contentsline {section}{\numberline {6.1}Gantt Chart }{16}%
-\contentsline {section}{\numberline {6.2}Halfway-point Deliverables}{16}%
-\contentsline {section}{\numberline {6.3}Final Deliverables}{16}%
-\contentsline {chapter}{Bibliography}{17}%
-\contentsline {chapter}{\numberline {A}Appendices}{19}%
-\contentsline {chapter}{\numberline {B}Formatting Tips}{20}%
-\contentsline {section}{\numberline {B.1}Inserting Chapters}{20}%
-\contentsline {section}{\numberline {B.2}Inserting Sections}{20}%
-\contentsline {subsection}{\numberline {B.2.1}Subsections}{20}%
-\contentsline {section}{\numberline {B.3}Inserting Labels}{20}%
-\contentsline {section}{\numberline {B.4}Inserting Floats}{21}%
-\contentsline {subsection}{\numberline {B.4.1}Inserting Images}{21}%
-\contentsline {subsection}{\numberline {B.4.2}Inserting Tables}{23}%
-\contentsline {section}{\numberline {B.5}Inserting Citations}{23}%
-\contentsline {section}{\numberline {B.6}Inserting Equations}{25}%
+\contentsline {subsection}{\numberline {1.3.2}Control}{4}%
+\contentsline {section}{\numberline {1.4}Documentation Flow and Organization}{4}%
+\contentsline {chapter}{\numberline {2}Related Work}{5}%
+\contentsline {section}{\numberline {2.1}Actuators}{5}%
+\contentsline {section}{\numberline {2.2}Mechanical Legs}{9}%
+\contentsline {section}{\numberline {2.3}Materials}{17}%
+\contentsline {section}{\numberline {2.4}Control}{18}%
+\contentsline {chapter}{\numberline {3}Problem Statement and Objectives }{20}%
+\contentsline {chapter}{\numberline {4}Methodology}{21}%
+\contentsline {section}{\numberline {4.1}Design and Implementation}{21}%
+\contentsline {subsection}{\numberline {4.1.1}Mechanical}{21}%
+\contentsline {subsection}{\numberline {4.1.2}Electronics}{23}%
+\contentsline {subsection}{\numberline {4.1.3}Control}{25}%
+\contentsline {section}{\numberline {4.2}Testing}{27}%
+\contentsline {chapter}{\numberline {5}Preliminary Findings}{28}%
+\contentsline {section}{\numberline {5.1}Design}{28}%
+\contentsline {subsection}{\numberline {5.1.1}Mechanical}{28}%
+\contentsline {subsection}{\numberline {5.1.2}Electronics}{29}%
+\contentsline {section}{\numberline {5.2}Control}{31}%
+\contentsline {chapter}{\numberline {6}Project Schedule and Deliverables}{33}%
+\contentsline {section}{\numberline {6.1}Gantt Chart }{33}%
+\contentsline {section}{\numberline {6.2}Halfway-point Deliverables}{34}%
+\contentsline {section}{\numberline {6.3}Final Deliverables}{34}%
+\contentsline {chapter}{Bibliography}{35}%
+\contentsline {chapter}{\numberline {A}PopBit Technical Datasheets}{38}%

@@ -1,14 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.29)  30 NOV 2019 12:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.29)  2 DEC 2019 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.tex"
-(c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.tex
+**"n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.tex"
+(n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.tex
 LaTeX2e <2019-10-01> patch level 3
-(c:/Users/jiego/Downloads/190 Template/upeeei.cls
+(n:/Documents/college/eee190/Manuscript Draft/upeeei.cls
 Document Class: upeeei 2011/11/22 v0.1 UP EEEI Thesis Class
-(c:/Users/jiego/Downloads/190 Template/uct11_new.clo (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+(n:/Documents/college/eee190/Manuscript Draft/uct11_new.clo (c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
  (c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -93,6 +93,368 @@ File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
+) (c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (c:/texlive/2019/texmf-dist/tex/latex/pgfgantt/pgfgantt.sty
+Package: pgfgantt 2018/01/10 v5.0 Draw Gantt diagrams with TikZ
+ (c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen113
+\pgfutil@tempdimb=\dimen114
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box29
+ (c:/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+Package srcltx Info: Expanded filename `pgfrcs.code.tex' to `pgfrcs.code.tex' on input line 13.
+
+:<+ pgfrcs.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (c:/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2019/08/03 v3.1.4b (3.1.4b)
+)
+:<-
+)
+Package: pgf 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+Package srcltx Info: Expanded filename `pgfsys.code.tex' to `pgfsys.code.tex' on input line 16.
+
+:<+ pgfsys.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks23
+\pgfkeys@temptoks=\toks24
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks25
+))
+\pgf@x=\dimen115
+\pgf@y=\dimen116
+\pgf@xa=\dimen117
+\pgf@ya=\dimen118
+\pgf@xb=\dimen119
+\pgf@yb=\dimen120
+\pgf@xc=\dimen121
+\pgf@yc=\dimen122
+\pgf@xd=\dimen123
+\pgf@yd=\dimen124
+\w@pgf@writea=\write3
+\r@pgf@reada=\read1
+\c@pgf@counta=\count94
+\c@pgf@countb=\count95
+\c@pgf@countc=\count96
+\c@pgf@countd=\count97
+\t@pgf@toka=\toks26
+\t@pgf@tokb=\toks27
+\t@pgf@tokc=\toks28
+\pgf@sys@id@count=\count98
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
+)))
+:<-
+Package srcltx Info: Expanded filename `pgfsyssoftpath.code.tex' to `pgfsyssoftpath.code.tex' on input line 17.
+:<+ pgfsyssoftpath.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfsyssoftpath@smallbuffer@items=\count99
+\pgfsyssoftpath@bigbuffer@items=\count100
+)
+:<-
+Package srcltx Info: Expanded filename `pgfsysprotocol.code.tex' to `pgfsysprotocol.code.tex' on input line 18.
+:<+ pgfsysprotocol.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)
+:<-
+) (c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+Package srcltx Info: Expanded filename `pgfcore.code.tex' to `pgfcore.code.tex' on input line 17.
+
+:<+ pgfcore.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen125
+\pgfmath@count=\count101
+\pgfmath@box=\box30
+\pgfmath@toks=\toks29
+\pgfmath@stack@operand=\toks30
+\pgfmath@stack@operation=\toks31
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count102
+)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@picminx=\dimen126
+\pgf@picmaxx=\dimen127
+\pgf@picminy=\dimen128
+\pgf@picmaxy=\dimen129
+\pgf@pathminx=\dimen130
+\pgf@pathmaxx=\dimen131
+\pgf@pathminy=\dimen132
+\pgf@pathmaxy=\dimen133
+\pgf@xx=\dimen134
+\pgf@xy=\dimen135
+\pgf@yx=\dimen136
+\pgf@yy=\dimen137
+\pgf@zx=\dimen138
+\pgf@zy=\dimen139
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@path@lastx=\dimen140
+\pgf@path@lasty=\dimen141
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@shorten@end@additional=\dimen142
+\pgf@shorten@start@additional=\dimen143
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count103
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgflinewidth=\dimen144
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@pt@x=\dimen145
+\pgf@pt@y=\dimen146
+\pgf@pt@temp=\dimen147
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfarrowsep=\dimen148
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@max=\dimen149
+\pgf@sys@shading@range@num=\count104
+\pgf@shadingcount=\count105
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfexternal@startupbox=\box34
+)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))
+:<-
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfnodeparttextbox=\box35
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@nodesepstart=\dimen150
+\pgf@nodesepend=\dimen151
+) (c:/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2019/08/03 v3.1.4b (3.1.4b)
+)) (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+Package srcltx Info: Expanded filename `pgfkeys.code.tex' to `pgfkeys.code.tex' on input line 10.
+
+:<+ pgfkeys.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+:<-
+) (c:/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+Package srcltx Info: Expanded filename `pgfmath.code.tex' to `pgfmath.code.tex' on input line 11.
+
+:<+ pgfmath.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+:<-
+)
+Package srcltx Info: Expanded filename `pgffor.code.tex' to `pgffor.code.tex' on input line 14.
+
+:<+ pgffor.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen152
+\pgffor@skip=\dimen153
+\pgffor@stack=\toks32
+\pgffor@toks=\toks33
+)
+:<-
+)
+Package srcltx Info: Expanded filename `tikz.code.tex' to `tikz.code.tex' on input line 13.
+
+:<+ tikz.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@plot@mark@count=\count106
+\pgfplotmarksize=\dimen154
+)
+\tikz@lastx=\dimen155
+\tikz@lasty=\dimen156
+\tikz@lastxsaved=\dimen157
+\tikz@lastysaved=\dimen158
+\tikz@lastmovetox=\dimen159
+\tikz@lastmovetoy=\dimen160
+\tikzleveldistance=\dimen161
+\tikzsiblingdistance=\dimen162
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
+\tikztreelevel=\count107
+\tikznumberofchildren=\count108
+\tikznumberofcurrentchild=\count109
+\tikz@fig@count=\count110
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgfmatrixcurrentrow=\count111
+\pgfmatrixcurrentcolumn=\count112
+\pgf@matrix@numberofcolumns=\count113
+)
+\tikz@expandcount=\count114
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+))
+:<-
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\arrowsize=\dimen163
+)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+\pgf@layerbox@background=\box40
+\pgf@layerboxsaved@background=\box41
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.tex
+File: pgflibrarypatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+)) (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfcalendar.sty
+Package srcltx Info: Expanded filename `pgfcalendar.code.tex' to `pgfcalendar.code.tex' on input line 13.
+
+:<+ pgfcalendar.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfcalendar.code.tex
+File: pgfcalendar.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+ (c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+\pgfcalendarcurrentjulian=\count115
+\pgf@cal@easter@Y=\count116
+\pgf@cal@easter@G=\count117
+\pgf@cal@easter@C=\count118
+\pgf@cal@easter@X=\count119
+\pgf@cal@easter@Z=\count120
+\pgf@cal@easter@D=\count121
+\pgf@cal@easter@E=\count122
+\pgf@cal@easter@N=\count123
+\pgf@cal@easter@M=\count124
+\pgf@cal@easter@julianday=\count125
+)
+:<-
+)
+\gtt@currentline=\count126
+\gtt@lasttitleline=\count127
+\gtt@currgrid=\count128
+\gtt@chartwidth=\count129
+\gtt@lasttitleslot=\count130
+\gtt@elementid=\count131
+\gtt@today@slot=\count132
+\gtt@startjulian=\count133
+\gtt@endjulian=\count134
+\gtt@chartid=\count135
+\gtt@vrule@slot=\count136
+\gtt@calendar@slots=\count137
+\gtt@calendar@weeknumber=\count138
+\gtt@calendar@startofweek=\count139
+\gtt@left@slot=\count140
+\gtt@right@slot=\count141
+) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2019/11/16 v2.17d AMS math features
+\@mathmargin=\skip44
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+ (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks34
+\ex@=\dimen164
+)) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen165
+) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count142
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count143
+\leftroot@=\count144
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count145
+\DOTSCASE@=\count146
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box42
+\strutbox@=\box43
+\big@size=\dimen166
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count147
+\c@MaxMatrixCols=\count148
+\dotsspace@=\muskip11
+\c@parentequation=\count149
+\dspbrk@lvl=\count150
+\tag@help=\toks35
+\row@=\count151
+\column@=\count152
+\maxfields@=\count153
+\andhelp@=\toks36
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks37
+\multlinegap=\skip45
+\multlinetaggap=\skip46
+\mathdisplay@stack=\toks38
+LaTeX Info: Redefining \[ on input line 2858.
+LaTeX Info: Redefining \] on input line 2859.
 ) (c:/texlive/2019/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
  (c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
@@ -100,15 +462,15 @@ Package: caption 2019/10/18 v3.4a Customizing captions (AR)
  (c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2019/09/09 v1.8e caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
-\captionmargin=\dimen113
-\captionmargin@=\dimen114
-\captionwidth=\dimen115
-\caption@tempdima=\dimen116
-\caption@indent=\dimen117
-\caption@parindent=\dimen118
-\caption@hangindent=\dimen119
-\abovecaptionskip=\skip44
-\belowcaptionskip=\skip45
+\captionmargin=\dimen173
+\captionmargin@=\dimen174
+\captionwidth=\dimen175
+\caption@tempdima=\dimen176
+\caption@indent=\dimen177
+\caption@parindent=\dimen178
+\caption@hangindent=\dimen179
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->\par \ifdim \prevdepth >-\p@ \vskip 10\p@ \relax \fi \setbox \@tempboxa \hbox {\vbox to\topskip {}#1: #2\unskip \strut }\ifdim \wd \@tempboxa >\hsize {\ssp #1: #2\unskip \strut \par } \else \hbox to\hsize {\hfil \unhbox \@tempboxa \hfil }\fi  on input line 1069.
@@ -118,23 +480,23 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count94
-\c@continuedfloat=\count95
+\c@caption@flags=\count154
+\c@continuedfloat=\count155
 Package caption Info: float package is loaded.
 )
-\c@KVtest=\count96
-\sf@farskip=\skip46
-\sf@captopadj=\dimen120
-\sf@capskip=\skip47
-\sf@nearskip=\skip48
-\c@subfigure=\count97
-\c@subfigure@save=\count98
-\c@lofdepth=\count99
-\c@subtable=\count100
-\c@subtable@save=\count101
-\c@lotdepth=\count102
-\sf@top=\skip49
-\sf@bottom=\skip50
+\c@KVtest=\count156
+\sf@farskip=\skip49
+\sf@captopadj=\dimen180
+\sf@capskip=\skip50
+\sf@nearskip=\skip51
+\c@subfigure=\count157
+\c@subfigure@save=\count158
+\c@lofdepth=\count159
+\c@subtable=\count160
+\c@subtable@save=\count161
+\c@lotdepth=\count162
+\sf@top=\skip52
+\sf@bottom=\skip53
 ) (c:/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/11/14 3.36 The Babel package
  (c:/texlive/2019/texmf-dist/tex/generic/babel/switch.def
@@ -143,10 +505,10 @@ File: switch.def 2019/11/14 3.36 Babel switching mechanism
 Language: english 2017/06/06 v3.3r English support from the babel system
  (c:/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/11/14 3.36 Babel common definitions
-\babel@savecnt=\count103
-\U@D=\dimen121
+\babel@savecnt=\count163
+\U@D=\dimen181
  (c:/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count104
+\bbl@dirlevel=\count164
 )
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -154,21 +516,21 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language21) on input line 108.
-)) (c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.aux)
+)) (n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.aux)
 \openout1 = `EEE190proposalTemplate.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -206,17 +568,17 @@ LaTeX Font Info:    ... okay on input line 21.
 
 (c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count105
-\scratchdimen=\dimen122
-\scratchbox=\box29
-\nofMPsegments=\count106
-\nofMParguments=\count107
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count108
-\MPscratchDim=\dimen123
-\MPnumerator=\count109
-\makeMPintoPDFobject=\count110
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count165
+\scratchdimen=\dimen182
+\scratchbox=\box44
+\nofMPsegments=\count166
+\nofMParguments=\count167
+\everyMPshowfont=\toks39
+\MPscratchCnt=\count168
+\MPscratchDim=\dimen183
+\MPnumerator=\count169
+\makeMPintoPDFobject=\count170
+\everyMPtoPDFconversion=\toks40
 ) (c:/texlive/2019/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
  (c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
@@ -247,50 +609,47 @@ Package grfext Info: Graphics extension search list:
 (grfext)             \AppendGraphicsExtensions on input line 460.
  (c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
+)) ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 43.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 43.
  [1
 
 {c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [1] (c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.toc
+ [1] (n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.toc
 Overfull \vbox (7.31305pt too high) has occurred while \output is active []
 
  [1
 
 ])
-\tf@toc=\write3
-\openout3 = `EEE190proposalTemplate.toc'.
+\tf@toc=\write4
+\openout4 = `EEE190proposalTemplate.toc'.
 
 
 Overfull \vbox (7.31305pt too high) has occurred while \output is active []
 
- [2] (c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lof)
-\tf@lof=\write4
-\openout4 = `EEE190proposalTemplate.lof'.
-
-
+ [2] (n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.lof
 Overfull \vbox (7.31305pt too high) has occurred while \output is active []
 
  [3
 
-] (c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.lot)
-\tf@lot=\write5
-\openout5 = `EEE190proposalTemplate.lot'.
+])
+\tf@lof=\write5
+\openout5 = `EEE190proposalTemplate.lof'.
 
 
 Overfull \vbox (7.31305pt too high) has occurred while \output is active []
 
- [4
+ [4] (n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.lot)
+\tf@lot=\write6
+\openout6 = `EEE190proposalTemplate.lot'.
+
+
+Overfull \vbox (4.71457pt too high) has occurred while \output is active []
+
+ [5
 
 ]
 Chapter 1.
@@ -301,153 +660,195 @@ Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
 
 ]
+<images/project_block_diagram.png, id=36, 1563.8425pt x 848.16875pt>
+File: images/project_block_diagram.png Graphic file (type png)
+<use images/project_block_diagram.png>
+Package pdftex.def Info: images/project_block_diagram.png  used on input line 93.
+(pdftex.def)             Requested size: 466.8636pt x 253.21014pt.
+
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [2]
+ [2 <n:/Documents/college/eee190/Manuscript Draft/images/project_block_diagram.png>]
+<images/joint_controller.png, id=42, 656.4525pt x 235.88126pt>
+File: images/joint_controller.png Graphic file (type png)
+<use images/joint_controller.png>
+Package pdftex.def Info: images/joint_controller.png  used on input line 111.
+(pdftex.def)             Requested size: 210.08719pt x 75.49074pt.
+<images/main_controller.png, id=43, 751.80875pt x 751.80875pt>
+File: images/main_controller.png Graphic file (type png)
+<use images/main_controller.png>
+Package pdftex.def Info: images/main_controller.png  used on input line 117.
+(pdftex.def)             Requested size: 280.121pt x 280.12653pt.
+
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [3]
+ [3 <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller.png> <n:/Documents/college/eee190/Manuscript Draft/images/main_controller.png>]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [4]
 Chapter 2.
-<images/prismatic_leg.png, id=36, 202.50656pt x 301.125pt>
+<images/bigdog.png, id=53, 872.50969pt x 628.59843pt>
+File: images/bigdog.png Graphic file (type png)
+<use images/bigdog.png>
+Package pdftex.def Info: images/bigdog.png  used on input line 148.
+(pdftex.def)             Requested size: 233.4318pt x 168.17pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [5
+
+
+]
+<images/sea_block_diagram.png, id=57, 635.37375pt x 206.27063pt>
+File: images/sea_block_diagram.png Graphic file (type png)
+<use images/sea_block_diagram.png>
+Package pdftex.def Info: images/sea_block_diagram.png  used on input line 157.
+(pdftex.def)             Requested size: 233.4318pt x 75.78386pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [6 <n:/Documents/college/eee190/Manuscript Draft/images/bigdog.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/sea_block_diagram.PNG>]
+<images/anydrive.png, id=64, 743.02594pt x 423.08063pt>
+File: images/anydrive.png Graphic file (type png)
+<use images/anydrive.png>
+Package pdftex.def Info: images/anydrive.png  used on input line 168.
+(pdftex.def)             Requested size: 186.74258pt x 106.33153pt.
+<images/proprioceptive.png, id=65, 331.99031pt x 335.75438pt>
+File: images/proprioceptive.png Graphic file (type png)
+<use images/proprioceptive.png>
+Package pdftex.def Info: images/proprioceptive.png  used on input line 177.
+(pdftex.def)             Requested size: 140.0605pt x 141.64603pt.
+<images/mini_cheetah_actuator.png, id=66, 972.63374pt x 449.42906pt>
+File: images/mini_cheetah_actuator.png Graphic file (type png)
+<use images/mini_cheetah_actuator.png>
+Package pdftex.def Info: images/mini_cheetah_actuator.png  used on input line 189.
+(pdftex.def)             Requested size: 280.121pt x 129.43272pt.
+<images/mini_cheetah_actuator_xsection.png, id=67, 800.9925pt x 481.04718pt>
+File: images/mini_cheetah_actuator_xsection.png Graphic file (type png)
+<use images/mini_cheetah_actuator_xsection.png>
+Package pdftex.def Info: images/mini_cheetah_actuator_xsection.png  used on input line 195.
+(pdftex.def)             Requested size: 233.4318pt x 140.19008pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [7 <n:/Documents/college/eee190/Manuscript Draft/images/anydrive.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/proprioceptive.PNG>]
+<images/opentorque.png, id=74, 1507.6325pt x 714.67pt>
+File: images/opentorque.png Graphic file (type png)
+<use images/opentorque.png>
+Package pdftex.def Info: images/opentorque.png  used on input line 204.
+(pdftex.def)             Requested size: 373.4923pt x 177.0422pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [8 <n:/Documents/college/eee190/Manuscript Draft/images/mini_cheetah_actuator.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/mini_cheetah_actuator_xsection.PNG>]
+<images/prismatic_leg.png, id=80, 202.50656pt x 301.125pt>
 File: images/prismatic_leg.png Graphic file (type png)
 <use images/prismatic_leg.png>
-Package pdftex.def Info: images/prismatic_leg.png  used on input line 122.
+Package pdftex.def Info: images/prismatic_leg.png  used on input line 219.
 (pdftex.def)             Requested size: 140.0605pt x 208.2727pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [4
-
-
- <c:/Users/jiego/Downloads/190 Template/images/prismatic_leg.PNG>]
-<images/quad_running_robot.png, id=42, 785.93625pt x 496.10344pt>
+ [9 <n:/Documents/college/eee190/Manuscript Draft/images/opentorque.png>]
+<images/quad_running_robot.png, id=85, 785.93625pt x 496.10344pt>
 File: images/quad_running_robot.png Graphic file (type png)
 <use images/quad_running_robot.png>
-Package pdftex.def Info: images/quad_running_robot.png  used on input line 131.
+Package pdftex.def Info: images/quad_running_robot.png  used on input line 228.
 (pdftex.def)             Requested size: 350.14769pt x 221.02649pt.
-<images/scout_ii.png, id=43, 240.14719pt x 240.14719pt>
+<images/scout_ii.png, id=86, 240.14719pt x 240.14719pt>
 File: images/scout_ii.png Graphic file (type png)
 <use images/scout_ii.png>
-Package pdftex.def Info: images/scout_ii.png  used on input line 138.
+Package pdftex.def Info: images/scout_ii.png  used on input line 235.
 (pdftex.def)             Requested size: 140.0605pt x 140.06229pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [5 <c:/Users/jiego/Downloads/190 Template/images/quad_running_robot.PNG> <c:/Users/jiego/Downloads/190 Template/images/scout_ii.PNG>]
-<images/articulated_leg.png, id=49, 163.3603pt x 237.88875pt>
+ [10 <n:/Documents/college/eee190/Manuscript Draft/images/prismatic_leg.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/quad_running_robot.PNG>]
+<images/articulated_leg.png, id=92, 163.3603pt x 237.88875pt>
 File: images/articulated_leg.png Graphic file (type png)
 <use images/articulated_leg.png>
-Package pdftex.def Info: images/articulated_leg.png  used on input line 149.
+Package pdftex.def Info: images/articulated_leg.png  used on input line 246.
 (pdftex.def)             Requested size: 140.0605pt x 203.95961pt.
-<images/mammal_articulated.png, id=50, 284.56313pt x 386.94562pt>
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [11 <n:/Documents/college/eee190/Manuscript Draft/images/scout_ii.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/articulated_leg.PNG>]
+<images/mammal_articulated.png, id=98, 284.56313pt x 386.94562pt>
 File: images/mammal_articulated.png Graphic file (type png)
 <use images/mammal_articulated.png>
-Package pdftex.def Info: images/mammal_articulated.png  used on input line 161.
+Package pdftex.def Info: images/mammal_articulated.png  used on input line 258.
 (pdftex.def)             Requested size: 116.7159pt x 158.70776pt.
-<images/sprawling_articulated.png, id=51, 429.85594pt x 317.68687pt>
+<images/sprawling_articulated.png, id=99, 429.85594pt x 317.68687pt>
 File: images/sprawling_articulated.png Graphic file (type png)
 <use images/sprawling_articulated.png>
-Package pdftex.def Info: images/sprawling_articulated.png  used on input line 167.
+Package pdftex.def Info: images/sprawling_articulated.png  used on input line 264.
 (pdftex.def)             Requested size: 186.74258pt x 138.0133pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [6 <c:/Users/jiego/Downloads/190 Template/images/articulated_leg.PNG>]
-<images/hyq.png, id=56, 399.74344pt x 252.945pt>
+ [12 <n:/Documents/college/eee190/Manuscript Draft/images/mammal_articulated.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/sprawling_articulated.PNG>]
+<images/hyq.png, id=106, 399.74344pt x 252.945pt>
 File: images/hyq.png Graphic file (type png)
 <use images/hyq.png>
-Package pdftex.def Info: images/hyq.png  used on input line 178.
+Package pdftex.def Info: images/hyq.png  used on input line 275.
 (pdftex.def)             Requested size: 326.80309pt x 206.80255pt.
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [7 <c:/Users/jiego/Downloads/190 Template/images/mammal_articulated.PNG> <c:/Users/jiego/Downloads/190 Template/images/sprawling_articulated.PNG>]
-<images/minihyq.png, id=64, 303.38344pt x 389.95688pt>
+<images/minihyq.png, id=107, 303.38344pt x 389.95688pt>
 File: images/minihyq.png Graphic file (type png)
 <use images/minihyq.png>
-Package pdftex.def Info: images/minihyq.png  used on input line 187.
+Package pdftex.def Info: images/minihyq.png  used on input line 284.
 (pdftex.def)             Requested size: 140.0605pt x 180.03091pt.
-<images/redundant_articulated_leg.png, id=65, 169.38281pt x 249.18094pt>
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [13 <n:/Documents/college/eee190/Manuscript Draft/images/hyq.PNG>]
+<images/anymal.png, id=112, 602.25pt x 450.9347pt>
+File: images/anymal.png Graphic file (type png)
+<use images/anymal.png>
+Package pdftex.def Info: images/anymal.png  used on input line 293.
+(pdftex.def)             Requested size: 326.80309pt x 244.70523pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [14 <n:/Documents/college/eee190/Manuscript Draft/images/minihyq.PNG>]
+<images/cheetah_3.png, id=117, 537.50812pt x 301.125pt>
+File: images/cheetah_3.png Graphic file (type png)
+<use images/cheetah_3.png>
+Package pdftex.def Info: images/cheetah_3.png  used on input line 302.
+(pdftex.def)             Requested size: 326.80309pt x 183.08405pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [15 <n:/Documents/college/eee190/Manuscript Draft/images/anymal.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/cheetah_3.PNG>]
+<images/redundant_articulated_leg.png, id=123, 169.38281pt x 249.18094pt>
 File: images/redundant_articulated_leg.png Graphic file (type png)
 <use images/redundant_articulated_leg.png>
-Package pdftex.def Info: images/redundant_articulated_leg.png  used on input line 194.
+Package pdftex.def Info: images/redundant_articulated_leg.png  used on input line 311.
 (pdftex.def)             Requested size: 140.0605pt x 206.05206pt.
+<images/cheetah12.png, id=124, 502.87875pt x 322.95656pt>
+File: images/cheetah12.png Graphic file (type png)
+<use images/cheetah12.png>
+Package pdftex.def Info: images/cheetah12.png  used on input line 320.
+(pdftex.def)             Requested size: 280.121pt x 179.89842pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [8 <c:/Users/jiego/Downloads/190 Template/images/hyq.PNG> <c:/Users/jiego/Downloads/190 Template/images/minihyq.PNG>]
+ [16 <n:/Documents/college/eee190/Manuscript Draft/images/redundant_articulated_leg.PNG>]
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [9 <c:/Users/jiego/Downloads/190 Template/images/redundant_articulated_leg.PNG>]
+ [17 <n:/Documents/college/eee190/Manuscript Draft/images/cheetah12.PNG>]
+<images/cheetah3_control.png, id=133, 1140.51094pt x 326.72063pt>
+File: images/cheetah3_control.png Graphic file (type png)
+<use images/cheetah3_control.png>
+Package pdftex.def Info: images/cheetah3_control.png  used on input line 364.
+(pdftex.def)             Requested size: 373.4923pt x 106.99057pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [18 <n:/Documents/college/eee190/Manuscript Draft/images/cheetah3_control.PNG>]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [19]
 Chapter 3.
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [10
-
-
-]
-Chapter 4.
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [11
-
-
-]
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [12]
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [13]
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [14]
-Chapter 5.
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [15
-
-
-]
-Chapter 6.
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [16
-
-
-]
-:<+ EEE190proposalTemplate.bbl
-(c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.bbl
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [17
-
-
-])
-:<-
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [18]
-Appendix A.
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 326.
-(c:/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/b/it' tried instead on input line 326.
-
-Overfull \vbox (7.05666pt too high) has occurred while \output is active []
-
- [19
-
-
-]
-Appendix B.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
@@ -455,90 +856,197 @@ Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
 
 ]
-<images/placement.png, id=111, 514.92375pt x 478.78876pt>
-File: images/placement.png Graphic file (type png)
-<use images/placement.png>
-Package pdftex.def Info: images/placement.png  used on input line 382.
-(pdftex.def)             Requested size: 233.4318pt x 217.0456pt.
+Chapter 4.
+<images/open_cauchy.png, id=150, 917.67844pt x 618.81187pt>
+File: images/open_cauchy.png Graphic file (type png)
+<use images/open_cauchy.png>
+Package pdftex.def Info: images/open_cauchy.png  used on input line 410.
+(pdftex.def)             Requested size: 326.80309pt x 220.37376pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [21 <c:/Users/jiego/Downloads/190 Template/images/placement.png>]
-<images/image_scale.png, id=116, 619.31375pt x 485.815pt>
-File: images/image_scale.png Graphic file (type png)
-<use images/image_scale.png>
-Package pdftex.def Info: images/image_scale.png  used on input line 409.
-(pdftex.def)             Requested size: 280.121pt x 219.7489pt.
-<images/subfloat.png, id=117, 652.4375pt x 206.7725pt>
-File: images/subfloat.png Graphic file (type png)
-<use images/subfloat.png>
-Package pdftex.def Info: images/subfloat.png  used on input line 426.
-(pdftex.def)             Requested size: 373.4923pt x 118.37267pt.
-File: images/subfloat.png Graphic file (type png)
-<use images/subfloat.png>
-Package pdftex.def Info: images/subfloat.png  used on input line 432.
-(pdftex.def)             Requested size: 373.4923pt x 118.37267pt.
+ [21
+
+
+ <n:/Documents/college/eee190/Manuscript Draft/images/open_cauchy.PNG>]
+<images/joint_actuator.png, id=155, 494.59781pt x 532.23843pt>
+File: images/joint_actuator.png Graphic file (type png)
+<use images/joint_actuator.png>
+Package pdftex.def Info: images/joint_actuator.png  used on input line 419.
+(pdftex.def)             Requested size: 233.4318pt x 251.19162pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [22 <c:/Users/jiego/Downloads/190 Template/images/image_scale.png>]
-Overfull \hbox (12.12634pt too wide) in paragraph at lines 451--465
- [][][] 
- []
+ [22 <n:/Documents/college/eee190/Manuscript Draft/images/joint_actuator.png>]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
-<images/bibtex.png, id=122, 507.8975pt x 250.9375pt>
-File: images/bibtex.png Graphic file (type png)
-<use images/bibtex.png>
-Package pdftex.def Info: images/bibtex.png  used on input line 475.
-(pdftex.def)             Requested size: 256.7764pt x 126.86984pt.
+ [23]
+<images/joint_controller_top.png, id=163, 566.115pt x 591.71063pt>
+File: images/joint_controller_top.png Graphic file (type png)
+<use images/joint_controller_top.png>
+Package pdftex.def Info: images/joint_controller_top.png  used on input line 483.
+(pdftex.def)             Requested size: 186.74258pt x 195.18385pt.
+<images/joint_controller_bottom.png, id=164, 566.115pt x 590.205pt>
+File: images/joint_controller_bottom.png Graphic file (type png)
+<use images/joint_controller_bottom.png>
+Package pdftex.def Info: images/joint_controller_bottom.png  used on input line 489.
+(pdftex.def)             Requested size: 186.74258pt x 194.6872pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [23 <c:/Users/jiego/Downloads/190 Template/images/subfloat.png>]
-<images/papers.png, id=127, 665.48625pt x 680.5425pt>
-File: images/papers.png Graphic file (type png)
-<use images/papers.png>
-Package pdftex.def Info: images/papers.png  used on input line 487.
-(pdftex.def)             Requested size: 326.80309pt x 334.19563pt.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 496.
- (c:/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 496.
-LaTeX Font Info:    Font shape `OMS/cmr/bx/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 498.
+ [24 <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller_top.PNG> <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller_bottom.PNG>]
+<images/foc.png, id=171, 837.88031pt x 584.1825pt>
+File: images/foc.png Graphic file (type png)
+<use images/foc.png>
+Package pdftex.def Info: images/foc.png  used on input line 504.
+(pdftex.def)             Requested size: 466.8636pt x 325.4998pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [24 <c:/Users/jiego/Downloads/190 Template/images/bibtex.png> <c:/Users/jiego/Downloads/190 Template/images/papers.png>]
-<images/bibliography.png, id=133, 943.525pt x 254.9525pt>
-File: images/bibliography.png Graphic file (type png)
-<use images/bibliography.png>
-Package pdftex.def Info: images/bibliography.png  used on input line 502.
-(pdftex.def)             Requested size: 466.8636pt x 126.15323pt.
-<images/equations.png, id=134, 729.72626pt x 67.25125pt>
-File: images/equations.png Graphic file (type png)
-<use images/equations.png>
-Package pdftex.def Info: images/equations.png  used on input line 534.
-(pdftex.def)             Requested size: 420.17438pt x 38.72252pt.
+ [25 <n:/Documents/college/eee190/Manuscript Draft/images/foc.PNG>]
+<images/pll_estimator.png, id=176, 589.4522pt x 268.75406pt>
+File: images/pll_estimator.png Graphic file (type png)
+<use images/pll_estimator.png>
+Package pdftex.def Info: images/pll_estimator.png  used on input line 537.
+(pdftex.def)             Requested size: 466.8636pt x 212.86288pt.
 
 Overfull \vbox (7.05666pt too high) has occurred while \output is active []
 
- [25 <c:/Users/jiego/Downloads/190 Template/images/bibliography.png> <c:/Users/jiego/Downloads/190 Template/images/equations.png>] (c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.aux) ) 
+ [26 <n:/Documents/college/eee190/Manuscript Draft/images/pll_estimator.PNG>]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [27]
+Chapter 5.
+<images/actuator_prototype.jpg, id=184, 2016.03188pt x 2036.35782pt>
+File: images/actuator_prototype.jpg Graphic file (type jpg)
+<use images/actuator_prototype.jpg>
+Package pdftex.def Info: images/actuator_prototype.jpg  used on input line 567.
+(pdftex.def)             Requested size: 233.4318pt x 235.77644pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [28
+
+
+ <n:/Documents/college/eee190/Manuscript Draft/images/actuator_prototype.jpg>]
+<images/motor.jpg, id=188, 1821.05344pt x 1661.45718pt>
+File: images/motor.jpg Graphic file (type jpg)
+<use images/motor.jpg>
+Package pdftex.def Info: images/motor.jpg  used on input line 576.
+(pdftex.def)             Requested size: 233.4318pt x 212.9548pt.
+<images/joint_controller_pcb_top.jpg, id=189, 2384.15718pt x 2315.65125pt>
+File: images/joint_controller_pcb_top.jpg Graphic file (type jpg)
+<use images/joint_controller_pcb_top.jpg>
+Package pdftex.def Info: images/joint_controller_pcb_top.jpg  used on input line 590.
+(pdftex.def)             Requested size: 186.74258pt x 181.36914pt.
+<images/joint_controller_pcb_bottom.jpg, id=190, 2406.74156pt x 2471.48344pt>
+File: images/joint_controller_pcb_bottom.jpg Graphic file (type jpg)
+<use images/joint_controller_pcb_bottom.jpg>
+Package pdftex.def Info: images/joint_controller_pcb_bottom.jpg  used on input line 596.
+(pdftex.def)             Requested size: 186.74258pt x 191.76425pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [29 <n:/Documents/college/eee190/Manuscript Draft/images/motor.jpg>]
+<images/joint_controller_pcb_top_full.jpg, id=194, 2590.42781pt x 2318.6625pt>
+File: images/joint_controller_pcb_top_full.jpg Graphic file (type jpg)
+<use images/joint_controller_pcb_top_full.jpg>
+Package pdftex.def Info: images/joint_controller_pcb_top_full.jpg  used on input line 606.
+(pdftex.def)             Requested size: 186.74258pt x 167.13463pt.
+<images/joint_controller_pcb_bottom_full.jpg, id=195, 2055.93094pt x 2146.26843pt>
+File: images/joint_controller_pcb_bottom_full.jpg Graphic file (type jpg)
+<use images/joint_controller_pcb_bottom_full.jpg>
+Package pdftex.def Info: images/joint_controller_pcb_bottom_full.jpg  used on input line 612.
+(pdftex.def)             Requested size: 186.74258pt x 194.92429pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [30 <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller_pcb_top.jpg> <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller_pcb_bottom.jpg>]
+<images/svm.jpg, id=200, 2210.2575pt x 1635.10875pt>
+File: images/svm.jpg Graphic file (type jpg)
+<use images/svm.jpg>
+Package pdftex.def Info: images/svm.jpg  used on input line 623.
+(pdftex.def)             Requested size: 326.80309pt x 241.76277pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [31 <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller_pcb_top_full.jpg> <n:/Documents/college/eee190/Manuscript Draft/images/joint_controller_pcb_bottom_full.jpg>]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [32 <n:/Documents/college/eee190/Manuscript Draft/images/svm.jpg>]
+Chapter 6.
+<images/gantt_chart.png, id=207, 1184.92688pt x 583.42969pt>
+File: images/gantt_chart.png Graphic file (type png)
+<use images/gantt_chart.png>
+Package pdftex.def Info: images/gantt_chart.png  used on input line 638.
+(pdftex.def)             Requested size: 466.8636pt x 229.86908pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [33
+
+
+ <n:/Documents/college/eee190/Manuscript Draft/images/gantt_chart.PNG>]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [34]
+:<+ EEE190proposalTemplate.bbl
+(n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.bbl
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [35
+
+
+]
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [36])
+:<-
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [37]
+Appendix A.
+<images/tpla.jpg, id=226, 420.06938pt x 618.05907pt>
+File: images/tpla.jpg Graphic file (type jpg)
+<use images/tpla.jpg>
+Package pdftex.def Info: images/tpla.jpg  used on input line 669.
+(pdftex.def)             Requested size: 373.4923pt x 549.53328pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [38
+
+
+]
+Overfull \vbox (21.80852pt too high) has occurred while \output is active []
+
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [39 <n:/Documents/college/eee190/Manuscript Draft/images/tpla.jpg>]
+<images/tabs.jpg, id=233, 421.575pt x 618.81187pt>
+File: images/tabs.jpg Graphic file (type jpg)
+<use images/tabs.jpg>
+Package pdftex.def Info: images/tabs.jpg  used on input line 676.
+(pdftex.def)             Requested size: 373.4923pt x 548.24808pt.
+
+Overfull \vbox (7.05666pt too high) has occurred while \output is active []
+
+ [40 <n:/Documents/college/eee190/Manuscript Draft/images/tabs.jpg>] (n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.aux) ) 
 Here is how much of TeX's memory you used:
- 4299 strings out of 492164
- 67821 string characters out of 6129087
- 149819 words of memory out of 5000000
- 8574 multiletter control sequences out of 15000+600000
- 10367 words of font info for 36 fonts, out of 8000000 for 9000
+ 17350 strings out of 492164
+ 350253 string characters out of 6129087
+ 418599 words of memory out of 5000000
+ 21324 multiletter control sequences out of 15000+600000
+ 11217 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,9n,49p,1288b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
-<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on "c:/Users/jiego/Downloads/190 Template/EEE190proposalTemplate.pdf" (31 pages, 734183 bytes).
+ 69i,16n,69p,1323b,385s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on "n:/Documents/college/eee190/Manuscript Draft/EEE190proposalTemplate.pdf" (47 pages, 15536912 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
+ 282 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
